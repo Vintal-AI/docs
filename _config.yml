@@ -1,0 +1,31 @@
+title: Dokumentacja Vintal
+description: Plany i propozycje rozwoju projektów Vintal.
+theme: just-the-docs
+lang: pl
+url: https://vintal-ai.github.io
+baseurl: /docs
+color_scheme: light
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  button: false
+heading_anchors: true
+back_to_top: true
+back_to_top_text: Do góry
+footer_content: Dokumentacja projektów Vintal. Status propozycji i ustaleń jest wskazany w każdym dokumencie.
+aux_links:
+  Edytuj na GitHubie: https://github.com/Vintal-AI/docs
+aux_links_new_tab: true
+gh_edit_link: true
+gh_edit_link_text: Edytuj tę stronę na GitHubie
+gh_edit_repository: https://github.com/Vintal-AI/docs
+gh_edit_branch: main
+gh_edit_view_mode: edit
+exclude:
+  - README.md
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - scripts/
