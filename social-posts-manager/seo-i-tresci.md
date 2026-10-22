@@ -56,9 +56,11 @@ Podstawą osobnej wyceny będzie jedna marka, język polski, jeden szablon artyk
 
 ## Faza 3 Analiza SEO połączona z planowaniem treści
 
-**Cel:** pomagać specjaliście SEO wybierać konkretne poprawki i materiały na podstawie danych o sklepie.
+**Status: to faza z największą liczbą niewiadomych.** Przed jej wyceną i realizacją potrzebujemy wspólnie określić problem, oczekiwany efekt i warunek sukcesu. Poniższy zakres jest propozycją do sprawdzenia w rozmowie z Magmari.
 
-Asystent zbierze wyniki uzgodnionego narzędzia do przeglądu stron oraz dostępne dane Google Search Console. Połączy je z ofertą i wiedzą Magmari. Przy zaleceniu pokaże adres lub temat, obserwację, źródło, datę i proponowaną dalszą czynność. Specjalista oceni priorytet.
+**Proponowany cel:** ułatwić wybór poprawek i treści na podstawie danych o sklepie. Ustalimy, czy najważniejsza jest oszczędność pracy zespołu, lepszy plan działań, ruch, sprzedaż czy widoczność w odpowiedziach AI.
+
+System mógłby sam uruchamiać analizę narzędziem takim jak Screaming Frog albo wykonywać własne kontrole. Ręczny eksport byłby opcją pomocniczą. Wyniki i dostępne dane Google Search Console połączymy z wiedzą Magmari. Zalecenie wskaże adres lub temat, obserwację, źródło, datę i dalszą czynność. Automatyzację i udział specjalisty uzgodnimy po rozpoznaniu potrzeby.
 
 | Co wskazują dane | Możliwe działanie |
 | --- | --- |
@@ -67,15 +69,25 @@ Asystent zbierze wyniki uzgodnionego narzędzia do przeglądu stron oraz dostęp
 | Potwierdzona potrzeba nie ma odpowiedniego materiału | Brief nowego poradnika, FAQ lub porównania |
 | Materiał jest gotowy do promocji | Powiązane posty społecznościowe |
 
-Niska widoczność uruchamia analizę przyczyny. Nowy tekst jest jedną z możliwych odpowiedzi. Pytania klientów i wpisane słowa kluczowe pomagają wybierać tematy; wielkość zainteresowania w wyszukiwarce wymaga osobnych danych.
+Niska widoczność wymaga analizy przyczyny; nowy tekst jest jedną z możliwych odpowiedzi. Wielkość zainteresowania tematem wymaga danych o wyszukiwaniu.
 
-Do pierwszej wyceny proponujemy jedną domenę, do 50 uzgodnionych adresów, jeden format danych z narzędzia przeglądającego strony i jedno źródło danych Search Console. Dostęp do wyników konkurencji lub dodatkowych usług będzie odrębną pozycją.
+Robocza granica pilota to jedna domena, do 50 adresów, jeden sposób analizy i jedno źródło danych Search Console. Dobór silnika, zakres automatycznego uruchamiania i dane konkurencji wymagają ustaleń przed wyceną.
 
-**Rezultat:** lista uzasadnionych zaleceń, zaakceptowane briefy przekazane do tworzenia treści oraz historia wykonanych zmian i ponownych sprawdzeń.
+**Możliwy rezultat:** uzasadnione zalecenia, briefy przekazane do tworzenia treści i historia ponownych sprawdzeń. Ostateczny rezultat dobierzemy do wskazanego problemu.
 
-**Odbiór:** specjalista weryfikuje trzy wybrane zalecenia na danych źródłowych; jedno z nich przechodzi do briefu, a sprawdzenie zmienionej strony potwierdza wykonaną poprawkę. To ocena działania narzędzia. Wpływ na ruch i sprzedaż mierzymy osobno, po wdrożeniu i z uwzględnieniem innych działań marketingowych.
+**Propozycja odbioru narzędzia:** sprawdzenie trzech zaleceń w źródłach, przekazanie jednego do briefu i ponowne sprawdzenie poprawionej strony. Kryteria dopasujemy do celu pilota. Efekty biznesowe oceniamy osobno, według uzgodnionego pomiaru i po wdrożeniu działań.
 
-**Potrzebujemy:** odpowiedzi specjalisty SEO o jego narzędziach i wąskich gardłach, dostępu do danych oraz uzgodnienia sposobu pomiaru. Zakres pełnego przeglądu dużego sklepu wycenimy po poznaniu liczby stron i sposobu ich działania.
+## Pytania do Magmari przed ustaleniem Fazy 3
+
+Na te pytania potrzebujemy odpowiedzi Mateusza i osób pracujących nad SEO oraz marketingiem. Pozwolą dopasować rozwiązanie do rzeczywistej potrzeby i przygotować zakres oraz wycenę. Wiemy już, że Krzysztof korzysta ze Screaming Frog SEO Spider; samo wskazanie narzędzia nie określa oczekiwanego efektu.
+
+1. **Jaki problem jest dziś najważniejszy?** Mało wartościowych wejść, niska sprzedaż z ruchu, brak widoczności konkretnych produktów, czasochłonne analizy czy brak planu treści? Prosimy wybrać główny problem i podać przykład.
+2. **Kto będzie korzystał z wyniku i co ma dzięki niemu zrobić?** Czy potrzebny jest raport dla właściciela, lista zadań dla Krzysztofa lub programisty, czy gotowe briefy dla marketingu? Kto wdroży zalecenia i kto zatwierdzi wynik pilota?
+3. **Jak wygląda obecna praca i gdzie się zatrzymuje?** Co dzieje się po skanowaniu w Screaming Frogu? Które czynności są powtarzalne, zajmują najwięcej czasu albo pozostają niewykonane? Co system ma robić samodzielnie, a co wymaga oceny człowieka?
+4. **Jaki konkretny efekt będzie sukcesem pilota?** Przykładowo: krótsze przygotowanie analizy, użyteczne priorytety, wdrożone poprawki lub briefy wykorzystane przez redakcję. Jeśli celem jest ruch, sprzedaż lub obecność w odpowiedziach AI, ustalmy wybrane strony, produkty albo pytania i oczekiwaną zmianę.
+5. **Jak sprawdzimy osiągnięcie celu?** Jakie mamy dane i stan początkowy? Ustalmy wskaźnik, wartość docelową, okres pomiaru i osobę oceniającą. Dla widoczności AI potrzebny jest uzgodniony zestaw pytań i usług; dla ruchu lub sprzedaży dostęp do odpowiednich danych.
+
+**Wynik tego rozpoznania:** wspólnie uzgodniony problem, główny użytkownik, rezultat pilota, zakres automatyzacji oraz warunek sukcesu z pomiarem i osobą odpowiedzialną. Dopiero na tej podstawie zamkniemy zakres i cenę Fazy 3. Fazy 1 i 2 można przygotowywać niezależnie od tych ustaleń.
 
 ## Osobne pakiety do oferty
 
@@ -83,7 +95,7 @@ Do pierwszej wyceny proponujemy jedną domenę, do 50 uzgodnionych adresów, jed
 | --- | --- | --- |
 | Faza 1 Demo | Sprawdzenie procesu na jednym produkcie i rzeczywistym AI | Materiały, temat, środowisko, osoba oceniająca i limit prób |
 | Faza 2 Produkcja treści | Powtarzalny proces redakcyjny i przekazywanie szkiców | Funkcje pracy zespołu, szablony i możliwości jednego bloga |
-| Faza 3 Asystent SEO | Analiza danych, zalecenia i ich połączenie z treściami | Narzędzia, dostęp do danych, zakres stron i częstotliwość analiz |
+| Faza 3 Asystent SEO | Rezultat pilota dopasowany do ustalonego problemu | Odpowiedzi produktowe, warunek sukcesu, silnik analizy, dane i automatyzacja |
 
 Każda faza ma osobną wycenę i odbiór. Decyzja o kontynuacji następuje po ocenie poprzedniego etapu. Licencje, dane zewnętrzne, utrzymanie i zużycie AI są wykazywane oddzielnie. Kwoty ustalimy po doprecyzowaniu zakresu; propozycja nie jest jeszcze ofertą cenową.
 
@@ -101,4 +113,4 @@ Po sprawdzeniu podstaw możemy rozszerzyć import pytań klientów, obsługę ko
 
 1. Potwierdzić z zespołem, czy podział na trzy fazy odpowiada potrzebie i sposobowi pracy.
 2. Wybrać rzeczywisty produkt oraz osobę oceniającą pokaz; uzgodnić z Weroniką oczekiwany przebieg.
-3. Po odpowiedzi specjalisty SEO dopracować zakres analizy i przygotować osobne wyceny.
+3. Odpowiedzieć na pytania produktowe Fazy 3 i uzgodnić jej warunek sukcesu przed zamknięciem zakresu i wyceny.

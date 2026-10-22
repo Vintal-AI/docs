@@ -186,6 +186,10 @@ for key, labels in zip(phase_keys, strips):
     story.extend([PageBreak(), para(key, "h1"), PhaseStrip(labels)])
     story.extend(markdown_blocks(sections[key]))
 
+research_key = "Pytania do Magmari przed ustaleniem Fazy 3"
+story.extend([PageBreak(), para(research_key, "h1")])
+story.extend(markdown_blocks(sections[research_key]))
+
 story.extend([PageBreak(), para("Pakiety i decyzja o kolejnych krokach", "h1")])
 for key in ["Osobne pakiety do oferty", "Co sprawdzimy dzięki demonstratorowi", "Dalszy rozwój", "Następne kroki"]:
     story.append(para(key, "h2"))
