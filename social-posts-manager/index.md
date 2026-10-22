@@ -12,7 +12,7 @@ Social Posts Manager wspiera pracę nad treściami marek: od kontekstu i pomysł
 
 ## Analiza SEO i treści dla Magmari
 
-Proponujemy sprawdzić, jakie informacje i poprawki są potrzebne w sklepie Magmari, a następnie wykorzystać wyniki do przygotowania konkretnych materiałów. Podstawą treści byłyby potwierdzone informacje o produktach, instrukcje i wiedza zespołu.
+Proponujemy trzy osobno wyceniane fazy: pokaz na jednym rzeczywistym produkcie, regularne tworzenie i przekazywanie treści, a następnie analizę SEO połączoną z planowaniem materiałów. Podstawą treści byłyby potwierdzone informacje o produktach, instrukcje i wiedza zespołu.
 
 [Otwórz plan analizy SEO i tworzenia treści]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
 

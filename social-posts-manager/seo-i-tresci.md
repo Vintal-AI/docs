@@ -6,101 +6,99 @@ nav_order: 1
 permalink: /social-posts-manager/seo-i-tresci/
 ---
 
-# Plan analizy SEO i tworzenia treści dla Magmari
+# Wiedza Magmari jako podstawa treści i rozwoju SEO
 
-**Propozycja do omówienia z zespołem Magmari i Vintal, 21 października 2026.**
+**Propozycja trzech osobno wycenianych faz. Aktualizacja: 22 października 2026.**
 
-Proponujemy połączyć analizę sklepu z przygotowywaniem treści opartych na wiedzy o marce, produktach i pytaniach klientów. Celem jest wskazanie konkretnych możliwości poprawy widoczności, ułatwienie klientom wyboru produktów oraz usprawnienie pracy zespołu marketingowego.
+Chcemy ułatwić zespołowi Magmari tworzenie przydatnych treści o produktach i wybieranie działań, które warto wykonać w sklepie. Zaczniemy od pokazu na rzeczywistych materiałach. Pozwoli on ocenić jakość odpowiedzi AI i zdecydować o dalszej inwestycji.
 
-Rozwiązanie składałoby się z dwóch połączonych części: asystenta analizy SEO oraz rozbudowy obecnej aplikacji do tworzenia treści. Specjalista SEO weryfikowałby priorytety, a osoba wskazana przez Magmari potwierdzałaby informacje produktowe. Dobór narzędzi i szczegółowy zakres pilota ustalimy po poznaniu obecnego sposobu pracy i jego najbardziej czasochłonnych elementów.
+[Pobierz opis w PDF]({{ '/assets/pdf/magmari-plan-etapow.pdf' | relative_url }}){: .btn .btn-primary }
 
-## Analiza sklepu i możliwości poprawy
+## Jak będzie działał system
 
-Asystent zbierałby dane z gotowych narzędzi, porządkował wyniki i proponował działania. Pierwsza analiza objęłaby uzgodnioną próbkę stron produktów, kategorii i bloga, z jawną listą sprawdzonych adresów oraz ograniczeń odczytu.
+1. **Dodajemy produkt i materiały.** Wybieramy produkt, opis, instrukcję i pytania, które otrzymuje obsługa klienta. Możemy też podać temat lub słowa kluczowe.
+2. **AI porządkuje wiedzę.** Przygotowuje propozycje faktów i odpowiedzi z odsyłaczami do materiałów. Osoba z Magmari potwierdza ich poprawność.
+3. **Wybieramy potrzebną treść.** System proponuje temat, odbiorcę i plan materiału. W późniejszej fazie będzie korzystał również z analizy SEO.
+4. **AI przygotowuje szkice.** Na podstawie zatwierdzonej wiedzy powstaje artykuł i propozycje postów. Brakująca informacja trafia na listę pytań do uzupełnienia.
+5. **Człowiek zatwierdza materiał.** Zespół poprawia treść i decyduje o przekazaniu jej do publikacji. Zachowujemy informację o użytych źródłach i wersji tekstu.
 
-| Obszar | Co możemy sprawdzać | Rezultat dla zespołu |
-| --- | --- | --- |
-| Podstawy techniczne | Błędne odsyłacze, przekierowania, tytuły, opisy, nagłówki, mapę strony i reguły dostępu robotów | Lista konkretnych problemów z adresami i dowodami |
-| Istniejące treści | Zakres odpowiedzi, powtarzające się materiały, brakujące informacje i linki między stronami | Propozycje aktualizacji produktów, kategorii, FAQ i artykułów |
-| Wyniki wyszukiwania | Dostępne dane Google Search Console o zapytaniach, stronach, wyświetleniach i kliknięciach | Wskazanie stron i tematów wymagających bliższego sprawdzenia |
-| Oferta i konkurencja | Zgodność tematów z ofertą Magmari oraz porównanie z uzgodnionymi konkurentami, w zakresie dostępnych danych | Hipotezy dotyczące luk tematycznych i ich znaczenia dla marki |
+AI wykonuje konkretne zadania: porządkuje materiały, proponuje tematy, pisze szkice i wskazuje twierdzenia wymagające sprawdzenia. Ostateczne potwierdzenie faktów i publikacji należy do ludzi.
 
-Dane Search Console wymagałyby dostępu lub eksportu. Dane o widoczności konkurencji mogą wymagać zewnętrznego narzędzia. Brak danych byłby oznaczony jako obszar do sprawdzenia; publiczny odczyt strony sam nie potwierdza jej indeksowania ani wyników sprzedaży.
+## Faza 1 Pokaz na jednym rzeczywistym produkcie
 
-### Co otrzymujemy po analizie
+**Cel:** sprawdzić, czy z materiałów Magmari potrafimy przygotować użyteczny artykuł i treści promujące go w social mediach.
 
-1. **Podsumowanie sytuacji:** najważniejsze obserwacje, zakres analizy i brakujące dane.
-2. **Listę zaleceń:** adres strony lub temat, dowód, proponowane działanie, uzasadnienie i priorytet wraz z poziomem pewności.
-3. **Podział pracy:** poprawki techniczne, aktualizacje treści, nowe materiały oraz kwestie wymagające decyzji specjalisty.
-4. **Briefy wybranych treści:** odbiorca, pytanie lub potrzeba, format, docelowa strona, potrzebna wiedza i sposób oceny rezultatu.
-5. **Historię realizacji:** zalecenie, decyzja zespołu, przygotowany materiał, wdrożenie i późniejsza weryfikacja.
+Proponowany zakres to jeden produkt, język polski, maksymalnie trzy krótkie materiały źródłowe oraz do pięciu pytań i odpowiedzi. Na ich podstawie przygotujemy przegląd wiedzy, plan artykułu, jeden szkic artykułu i dwa szkice postów. Pokaz będzie korzystał z rzeczywistego generowania AI i zapisanego zestawu wejściowego. Publikowanie w sklepie pozostaje kolejnym etapem.
 
-Niska widoczność byłaby sygnałem do zbadania przyczyny. Nowy artykuł proponowalibyśmy wtedy, gdy analiza uzasadnia potrzebę nowej treści. W innych przypadkach właściwsze może być uzupełnienie istniejącej strony, poprawa nawigacji albo usunięcie problemu technicznego.
+### Co zobaczymy
 
-## Baza wiedzy i wartościowe treści
+Wybieramy temat, na przykład „Jak stosować wybrany produkt i jakich błędów unikać?”. Na ekranie przechodzimy od materiałów do potwierdzonych informacji, następnie do planu i gotowego szkicu. Możemy sprawdzić, z którego materiału pochodzi użyta informacja, oraz zobaczyć, jak system zgłasza brak odpowiedzi.
 
-Obecna aplikacja ma już w kodzie profil marki, produkty, zdjęcia oraz potwierdzane fakty i FAQ. Proponujemy rozwinąć zbieranie i porządkowanie tych informacji, aby stanowiły wspólną podstawę treści blogowych, produktowych i społecznościowych.
+**Rezultat:** działający demonstrator, przykładowe materiały, informacja o koszcie generowania i lista poprawek przed regularnym użyciem.
 
-| Źródło wiedzy | Jak je wykorzystamy |
+**Odbiór:** wskazana osoba z Magmari ocenia poprawność informacji, przydatność artykułu i zakres niezbędnych poprawek. Powtarzamy pokaz na zapisanych danych oraz sprawdzamy przypadek brakującej informacji. Uzgodniony limit kosztu AI obowiązuje także podczas prób.
+
+**Potrzebujemy:** wyboru produktu, materiałów do wykorzystania, osoby potwierdzającej wiedzę i dostępu do środowiska demonstracyjnego. Narzędzia specjalisty SEO mogą być ustalane równolegle.
+
+## Faza 2 Regularne tworzenie i przekazywanie treści
+
+**Cel:** rozwinąć sprawdzony pokaz w powtarzalny proces pracy w obecnej aplikacji.
+
+Zespół będzie dodawał wiedzę przy marce i produktach, przeglądał propozycje AI, wybierał temat oraz zamawiał szkic. System zachowa źródła, historię wersji, uwagi i stan zatwierdzenia. Z zaakceptowanego artykułu będzie można przygotować powiązane posty do obecnego procesu społecznościowego.
+
+Podstawą osobnej wyceny będzie jedna marka, język polski, jeden szablon artykułu i dwa uzgodnione formaty tekstów do social mediów. Dodamy przekazanie szkicu do jednego bloga, jeżeli sprawdzone możliwości sklepu pozwolą na integrację. Gdy potrzebny będzie własny moduł po stronie sklepu, wycenimy go osobno. Liczbę generowanych materiałów określa budżet i plan redakcyjny.
+
+**Rezultat:** narzędzie do regularnej pracy, edycja i zatwierdzanie treści oraz ustalony sposób przekazywania materiałów do sklepu.
+
+**Odbiór:** użytkownik przechodzi cały proces od materiału źródłowego do uzgodnionego przekazania do sklepu: szkicu w jego panelu albo gotowego eksportu. Sposób przekazania ustalamy przed wyceną. Poprawiona wersja wymaga ponownego zatwierdzenia, ponowienie wysyłki nie tworzy duplikatu, a posty zachowują powiązanie z artykułem. Publikacja jest osobno potwierdzaną czynnością.
+
+**Potrzebujemy:** wyników Fazy 1, uzgodnienia pracy z Weroniką lub inną wskazaną osobą oraz sprawdzenia silnika sklepu i dostępnego połączenia.
+
+## Faza 3 Analiza SEO połączona z planowaniem treści
+
+**Cel:** pomagać specjaliście SEO wybierać konkretne poprawki i materiały na podstawie danych o sklepie.
+
+Asystent zbierze wyniki uzgodnionego narzędzia do przeglądu stron oraz dostępne dane Google Search Console. Połączy je z ofertą i wiedzą Magmari. Przy zaleceniu pokaże adres lub temat, obserwację, źródło, datę i proponowaną dalszą czynność. Specjalista oceni priorytet.
+
+| Co wskazują dane | Możliwe działanie |
 | --- | --- |
-| Materiały produktowe i instrukcje | Opisy zastosowania, sposobu użycia, różnic między produktami i ograniczeń |
-| Pytania do obsługi klienta | Lista rzeczywistych wątpliwości, propozycje FAQ i tematów poradników |
-| Wiedza zespołu i specjalistów Magmari | Potwierdzone odpowiedzi, wskazówki i przykłady praktyczne |
-| Analiza SEO i istniejące treści | Wybór materiału do utworzenia lub aktualizacji, z uzasadnieniem |
+| Błąd techniczny utrudnia korzystanie ze strony | Zadanie dla osoby utrzymującej sklep |
+| Istniejąca strona nie odpowiada na ważne pytanie | Uzupełnienie produktu, kategorii lub artykułu |
+| Potwierdzona potrzeba nie ma odpowiedniego materiału | Brief nowego poradnika, FAQ lub porównania |
+| Materiał jest gotowy do promocji | Powiązane posty społecznościowe |
 
-Na początku wystarczy ręczne dodawanie lub import wybranych materiałów. Pytania z wiadomości powinny trafiać do bazy bez danych osobowych klientów. Automatyczne połączenie ze skrzynką może być osobnym rozszerzeniem.
+Niska widoczność uruchamia analizę przyczyny. Nowy tekst jest jedną z możliwych odpowiedzi. Pytania klientów i wpisane słowa kluczowe pomagają wybierać tematy; wielkość zainteresowania w wyszukiwarce wymaga osobnych danych.
 
-Każdy wpis wiedzy powinien mieć źródło, powiązanie z marką lub produktem, status potwierdzenia i ewentualny termin ważności. AI pomagałoby grupować pytania, wykrywać braki i przygotowywać odpowiedzi do zatwierdzenia. Odpowiedź zaproponowana przez AI stawałaby się wiedzą do wykorzystania dopiero po potwierdzeniu przez człowieka.
+Do pierwszej wyceny proponujemy jedną domenę, do 50 uzgodnionych adresów, jeden format danych z narzędzia przeglądającego strony i jedno źródło danych Search Console. Dostęp do wyników konkurencji lub dodatkowych usług będzie odrębną pozycją.
 
-Na tej podstawie możemy przygotowywać poradniki, instrukcje użycia, porównania, FAQ, propozycje zmian opisów oraz powiązane posty. Materiał powinien odpowiadać na konkretną potrzebę odbiorcy i korzystać z zatwierdzonych informacji. Brak potwierdzonej informacji produktowej wymagałby uzupełnienia, zanim stanie się ona twierdzeniem w publikacji.
+**Rezultat:** lista uzasadnionych zaleceń, zaakceptowane briefy przekazane do tworzenia treści oraz historia wykonanych zmian i ponownych sprawdzeń.
 
-## Połączenie analizy z aplikacją do tworzenia treści
+**Odbiór:** specjalista weryfikuje trzy wybrane zalecenia na danych źródłowych; jedno z nich przechodzi do briefu, a sprawdzenie zmienionej strony potwierdza wykonaną poprawkę. To ocena działania narzędzia. Wpływ na ruch i sprzedaż mierzymy osobno, po wdrożeniu i z uwzględnieniem innych działań marketingowych.
 
-Proponowany przepływ pracy:
+**Potrzebujemy:** odpowiedzi specjalisty SEO o jego narzędziach i wąskich gardłach, dostępu do danych oraz uzgodnienia sposobu pomiaru. Zakres pełnego przeglądu dużego sklepu wycenimy po poznaniu liczby stron i sposobu ich działania.
 
-**Analiza → zalecenie → decyzja specjalisty SEO → brief → wiedza marki → szkic → przegląd → publikacja → pomiar.**
+## Osobne pakiety do oferty
 
-Analiza dostarczałaby brief do aplikacji, z zachowaniem źródła zalecenia i docelowej strony. Użytkownik wybierałby, co przygotować. Dla artykułu lub opisu powstałby odpowiedni nowy rodzaj materiału; posty społecznościowe nadal korzystałyby z obecnego procesu aplikacji. Zmiana opublikowanego materiału wymagałaby przeglądu nowej wersji.
-
-### Przykład zastosowania
-
-To przykład procesu, a nie wynik wykonanego audytu Magmari. Jeżeli klienci pytają o kolejność stosowania produktów, a przegląd sklepu potwierdzi brak jasnej odpowiedzi, zespół może:
-
-1. Wybrać, czy uzupełnić stronę produktu, czy przygotować wspólny poradnik.
-2. Zebrać i potwierdzić instrukcje dla wskazanych produktów.
-3. Przygotować materiał oraz linki do właściwych stron sklepu.
-4. Po zatwierdzeniu przygotować z niego post lub karuzelę edukacyjną.
-5. Sprawdzić publikację i późniejsze wyniki wybranych stron.
-
-Częste pytanie klienta jest dowodem potrzeby informacyjnej. Potencjał wyszukiwania oceniamy osobno, na podstawie dostępnych danych.
-
-## Przekazywanie treści do sklepu
-
-Pierwszy pilot może korzystać z ręcznego przekazania gotowego materiału. Kolejny etap to wysyłanie szkiców do panelu sklepu przez dostępne API, po sprawdzeniu jego technologii. Integracja powinna zapamiętywać identyfikator wpisu, umożliwiać aktualizację i zapobiegać duplikatom przy ponowieniu wysyłki. Publikacja następowałaby po zatwierdzeniu materiału przez wskazaną osobę.
-
-Sklep pozostałby źródłem aktualnych cen, dostępności, wariantów i warunków zakupu. Aplikacja przechowywałaby wiedzę redakcyjną oraz powiązanie produktu z jego adresem w sklepie. Obecny katalog aplikacji nie przechowuje tych adresów ani danych handlowych, więc takie połączenie wymaga rozszerzenia.
-
-## Pierwszy pilot i kryteria oceny
-
-| Etap | Proponowany zakres | Kryterium oceny |
+| Pakiet | Za jaki rezultat płacimy | Co ustalamy przed wyceną |
 | --- | --- | --- |
-| Uzgodnienie pracy z SEO | Narzędzia, dostępne dane, cel biznesowy i próbka stron | Specjalista potwierdza zakres i sposób oceny zaleceń |
-| Analiza Magmari | Jeden przebieg analizy i wspólny przegląd wyników | Zalecenia mają sprawdzalne dowody, uzasadnienie i wskazaną dalszą czynność |
-| Wiedza i treści | Uzupełnienie wiedzy dla wybranego tematu oraz propozycja dwóch aktualizacji i jednego nowego materiału, jeżeli uzasadni je analiza | Treści odpowiadają na określoną potrzebę, mają potwierdzone informacje i przechodzą przegląd |
-| Wdrożenie i weryfikacja | Publikacja zaakceptowanych zmian i ponowne sprawdzenie stron | Zapisane są rzeczywiste adresy, wersje i daty wdrożenia; porównanie potwierdza wykonanie zmian |
+| Faza 1 Demo | Sprawdzenie procesu na jednym produkcie i rzeczywistym AI | Materiały, temat, środowisko, osoba oceniająca i limit prób |
+| Faza 2 Produkcja treści | Powtarzalny proces redakcyjny i przekazywanie szkiców | Funkcje pracy zespołu, szablony i możliwości jednego bloga |
+| Faza 3 Asystent SEO | Analiza danych, zalecenia i ich połączenie z treściami | Narzędzia, dostęp do danych, zakres stron i częstotliwość analiz |
 
-W pilocie ocenimy trafność zaleceń, nakład pracy zespołu, jakość treści i koszt narzędzi oraz AI. Wyniki biznesowe ocenimy osobno: zapytania związane z ofertą, kliknięcia do wybranych stron oraz przejścia do produktów i zakupy, jeśli analityka je mierzy. Porównanie powinno uwzględniać daty zmian, sezonowość i inne działania marketingowe; sam wzrost po publikacji nie dowodzi jej wyłącznego wpływu.
+Każda faza ma osobną wycenę i odbiór. Decyzja o kontynuacji następuje po ocenie poprzedniego etapu. Licencje, dane zewnętrzne, utrzymanie i zużycie AI są wykazywane oddzielnie. Kwoty ustalimy po doprecyzowaniu zakresu; propozycja nie jest jeszcze ofertą cenową.
 
-Prototyp oparty na gotowych narzędziach i importach ma małą–średnią złożoność. Powtarzalne analizy dla wielu marek, integracje kont i historia zaleceń podnoszą ją do średniej–dużej. Szczegółową wycenę przygotujemy po wyborze narzędzi i zakresu.
+## Co sprawdzimy dzięki demonstratorowi
 
-## Dalszy rozwój widoczności w AI
+Demo pokaże jakość przygotowania treści z wiedzy Magmari, pracę potrzebną do ich poprawienia i koszt generowania. Nie potwierdzi jeszcze wzrostu widoczności w Google, rekomendacji przez usługi AI ani wzrostu sprzedaży.
 
-Uporządkowana wiedza o produktach i aktualne dane sklepu pozwolą później rozwijać obecność w usługach AI. Rozdzielimy pomiar wzmianek, rekomendacji i cytowań od integracji umożliwiającej zakup.
+Dalszy pomiar obejmie wyniki wybranych stron, przejścia do produktów i zakupy, jeśli są rejestrowane. Przy porównaniu uwzględnimy daty publikacji, sezonowość i pozostałe działania marketingowe.
 
-W kolejnym etapie możemy ocenić kompletność danych produktowych, przygotować eksport do wybranego kanału i powtarzać uzgodniony zestaw pytań testowych. Pełna obsługa zakupów przez agentów wymaga osobnego sprawdzenia dostępności i integracji transakcyjnej. [Dokumentacja OpenAI dotycząca katalogów](https://developers.openai.com/commerce/guides/get-started) i [Google UCP](https://developers.google.com/merchant/ucp) opisują konkretne ścieżki takiego rozwoju.
+## Dalszy rozwój
+
+Po sprawdzeniu podstaw możemy rozszerzyć import pytań klientów, obsługę kolejnych języków, analizę większej liczby stron i eksport danych produktowych do wybranych usług AI. Możliwość zakupów przez agentów wymaga osobnej oceny dostępności i integracji ze sklepem.
 
 ## Następne kroki
 
-1. Zebrać od specjalisty SEO listę narzędzi, dostępnych danych i najbardziej czasochłonnych zadań.
-2. Uzgodnić cel pilota, próbkę stron oraz osoby potwierdzające zalecenia i wiedzę produktową.
-3. Dobrać narzędzia i przygotować zakres prac z wyceną, obejmującą koszty zewnętrznych danych i AI.
+1. Potwierdzić z zespołem, czy podział na trzy fazy odpowiada potrzebie i sposobowi pracy.
+2. Wybrać rzeczywisty produkt oraz osobę oceniającą pokaz; uzgodnić z Weroniką oczekiwany przebieg.
+3. Po odpowiedzi specjalisty SEO dopracować zakres analizy i przygotować osobne wyceny.

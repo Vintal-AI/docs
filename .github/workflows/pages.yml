@@ -29,6 +29,13 @@ jobs:
       - name: Przygotowanie GitHub Pages
         id: pages
         uses: actions/configure-pages@v6
+      - name: Przygotowanie PDF z aktualnej treści
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --yes --no-install-recommends fonts-dejavu-core
+          python3 -m venv "$RUNNER_TEMP/docs-pdf"
+          "$RUNNER_TEMP/docs-pdf/bin/pip" install --requirement scripts/requirements-pdf.txt
+          "$RUNNER_TEMP/docs-pdf/bin/python" scripts/build_pdf.py
       - name: Budowanie strony
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace
         env:

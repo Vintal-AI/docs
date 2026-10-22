@@ -24,7 +24,7 @@ Aplikacja wspierająca przygotowanie i zarządzanie treściami marek. Dokumentac
 
 | Dokument | Status | Cel |
 | --- | --- | --- |
-| [Analiza SEO i treści dla Magmari]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Propozycja do omówienia | Połączenie analizy sklepu z bazą wiedzy i przygotowaniem potrzebnych treści |
+| [Treści i SEO dla Magmari]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Propozycja trzech faz do omówienia | Demo na produkcie, regularna produkcja treści i asystent analizy SEO; dostępny opis w PDF |
 
 ## Następne kroki
 
