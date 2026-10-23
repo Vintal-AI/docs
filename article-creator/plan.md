@@ -51,7 +51,7 @@ Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działa
 
 | Agent | Widoczny rezultat |
 | --- | --- |
-| Przygotowania źródeł i planu | Materiały, braki, propozycje fraz pokrewnych i plan |
+| Przygotowania źródeł i planu | Materiały, braki, frazy bliskoznaczne i powiązane z frazą główną oraz plan |
 | Piszący | Szkic oparty na zleceniu, kontekście marki i źródłach |
 | Recenzujący | Uwagi o zgodności ze źródłami, kompletności, czytelności i linkach |
 | Kontroli SEO | Raport uzgodnionych zasad i wskazanie poprawek |
@@ -59,15 +59,19 @@ Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działa
 | Tłumaczenia i korekty językowej | Wersja docelowa, sprawdzenie języka, terminologii i znaczenia |
 | Ilustracji i opisu alternatywnego | Opcjonalny obraz i opis zgodny z jego zawartością |
 
+### Proponowanie fraz do artykułu
+
+Z frazy głównej aplikacja proponuje frazy bliskoznaczne i powiązane, np. „buty do biegania” → „obuwie do biegania”, „buty biegowe”. Można je edytować, usuwać i dodawać własne. Wybrane trafiają do briefu, pisania i kontroli tekstu. To funkcja MVP, także dla zleceń z Excela. Propozycje AI nie zawierają pomiaru popularności i nie wymagają GSC ani płatnych danych SEO.
+
 ### Kolejność pracy agentów
 
-1. Agent przygotowania porządkuje opis produktu, informacje i materiały wizualne, sprawdza źródła, zgłasza braki i układa plan.
+1. Agent przygotowania sprawdza materiały, zgłasza braki, proponuje frazy bliskoznaczne i powiązane oraz układa plan.
 2. Agent piszący tworzy szkic na podstawie planu i źródeł.
 3. Agent recenzujący robi review, a agent SEO sprawdza uzgodnione zasady.
 4. Agent korekty poprawia wskazane problemy; materiał przechodzi ponowne kontrole.
 5. W razie potrzeby agenci przygotowują tłumaczenie z korektą oraz obraz i alt. Komplet trafia do akceptacji człowieka.
 
-Role tworzą kontrolowaną sekwencję z limitem poprawek i kosztu. Trudny przypadek trafia do człowieka. Frazy pokrewne proponowane przez AI nie oznaczają zmierzonej popularności wyszukiwania.
+Role tworzą kontrolowaną sekwencję z limitem poprawek i kosztu. Trudny przypadek trafia do człowieka.
 
 Przekazane [wymagania SEO](https://vintal-ai.github.io/docs/article-creator/wymagania-seo/) doprecyzowują strukturę, źródła, metadane i kontrole. Zasady będą edytowalne i wersjonowane. Kod sprawdzi wartości policzalne, agent oceni jakość, a człowiek zatwierdzi fakty. Indeks witryny, GSC i analiza TOP wyników wymagają uzgodnienia szerszego zakresu. Limity redakcyjne nie są uniwersalnymi progami Google.
 
@@ -97,19 +101,21 @@ Eksport wskazuje konkretną wersję i język; szkic oznaczamy jako roboczy. Zmia
 
 HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zależy od strony docelowej. W tej fazie automatyczna wysyłka przez API może objąć wyłącznie sklep Magmari. Integracje z pozostałymi systemami odkładamy do kolejnej, osobno uzgadnianej fazy. Pobranie pliku nie oznacza publikacji.
 
+Podany [przykład katalogu A–Z](https://casestudywriting.com/a-z-index.html#letter-i) pokazuje alfabetyczny indeks stron z krótkimi opisami i linkami. To inspiracja dla organizacji poradnika lub słownika, a nie źródło fraz SEO. Budowa takiego indeksu po stronie sklepu wymaga uzgodnienia w opcji Magmari.
+
 ## MVP kreatora artykułów
 
 **Cel:** dostarczyć MVP osobnej aplikacji obsługujące cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
 1. **Setup i fundament aplikacji.** Nowe repozytorium, konfiguracja środowiska, automatyczne sprawdzenia i deploy, logowanie, dostęp do marek, dane, pliki, zadania i koszty AI. Planowany hosting: Fly.io; dostęp i zasoby wymagają potwierdzenia.
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
-3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
+3. **Tworzenie i kontrola treści.** Źródła, propozycje fraz bliskoznacznych i powiązanych, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
 4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
 5. **Eksport i opcja publikacji.** Artykuł pobieramy jako MD, HTML lub PDF; przy MD/HTML dostępna jest paczka z obrazami i metadanymi. Opcjonalnie dodamy publikację do sklepu Magmari: języki, harmonogram, obsługę błędów i potwierdzenie wyniku. API innych systemów pozostają na później.
 
 **Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w sklepie.
+**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy propozycje fraz, ich edycję i wykorzystanie w briefie oraz tekście; także źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w sklepie.
 
 ## Założenia do uzgodnienia
 

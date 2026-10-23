@@ -26,6 +26,8 @@ Wytyczne obejmują zarówno jakość pojedynczego artykułu, jak i analizę cał
 
 Progi i listy fraz będą edytowalne przez uprawnioną osobę z SEO lub redakcji, z zapisem autora i daty zmiany. Raport wskaże wersję zasad, miejsce problemu i działanie: blokadę generowania, blokadę akceptacji albo ostrzeżenie. Brak danych do sprawdzenia jest osobnym wynikiem, a nie zaliczoną kontrolą.
 
+Podstawowe MVP obejmuje proponowanie fraz bliskoznacznych i powiązanych na podstawie frazy głównej, z edycją i wykorzystaniem w briefie. To propozycje językowe AI. Pobieranie zmierzonego wolumenu wyszukiwań i danych z GSC lub SERP pozostaje osobną integracją do uzgodnienia.
+
 ## Co doprecyzowuje kreator
 
 Artykuł ma mieć jasną strukturę, lead, poprawne nagłówki, prawdziwe dane autora i FAQ oparte na rzeczywistych pytaniach. Potrzebne są odwołania twierdzeń do materiałów w panelu, kontrola pustych sformułowań, kontekstowe linki oraz obrazy z opisami. Nie publikujemy prywatnych materiałów źródłowych razem z tekstem.
