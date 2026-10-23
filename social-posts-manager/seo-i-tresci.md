@@ -22,7 +22,7 @@ Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoc
 2. **Agenci tworzą i sprawdzają treść.** Porządkują źródła i plan, piszą szkic, robią review, kontrolują SEO i poprawiają materiał przed oceną człowieka.
 3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
 4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
-5. **Przekazujemy gotowy artykuł.** Po akceptacji materiał jest dostępny w aplikacji. Jeśli uzgodnimy integrację publikacji, trafi zgodnie z terminem na stronę właściwej marki i języka, z zapisanym wynikiem wysyłki.
+5. **Pobieramy lub publikujemy artykuł.** Gotowy materiał pobieramy jako Markdown, HTML lub PDF. Jeśli uzgodnimy integrację, zatwierdzona wersja trafi w terminie na stronę właściwej marki i języka.
 
 Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię zmian oraz koszt AI. Całość stanowi jeden zakres wdrożenia; poniżej opisujemy jego elementy.
 
@@ -81,6 +81,22 @@ Każda wersja językowa ma osobny stan i miejsce publikacji: PL trafia na PL, EN
 
 Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
 
+## Formaty artykułu i pobieranie
+
+**Jeden artykuł, kilka formatów wyjściowych.** Treść, obrazy i metadane przechowujemy we wspólnym zapisie. Wybrana wersja językowa może być pobrana w każdym z obsługiwanych formatów, bez ponownego pisania tekstu przez AI.
+
+| Format | Zastosowanie |
+| --- | --- |
+| Markdown (.md) | Edycja i przenoszenie treści do narzędzi lub stron obsługujących Markdown; nagłówki, listy, linki i obrazy |
+| HTML (.html) | Semantyczna treść do wstawienia do CMS lub sklepu, z nagłówkami, linkami i obrazami; wygląd dopasowuje strona docelowa |
+| PDF (.pdf) | Czytelna wersja artykułu do pobrania, przesłania i przeglądu, z obrazami i podziałem na strony |
+
+Przy MD i HTML udostępnimy też paczkę ZIP z wybranym plikiem, obrazami i osobnymi metadanymi: tytułem, językiem, proponowanym adresem i opisem. Dzięki temu materiał można przekazać bez zależności od tymczasowych linków do zdjęć. PDF zawiera obrazy w dokumencie.
+
+Eksport wskazuje konkretną wersję i język; szkic oznaczamy jako roboczy. Zmiana formatu nie zmienia treści ani jej akceptacji. Wersja po poprawkach ma własny eksport.
+
+WordPress jest przykładowym celem dla HTML lub uzgodnionej integracji. Dopasujemy pola i sposób wstawiania do konkretnej strony. Różne motywy, edytory i wtyczki mogą wymagać innego mapowania; dodatkowy CMS lub szablon ustalamy w zakresie. Pobranie pliku nie oznacza opublikowania artykułu.
+
 ## Jedna faza Pełny kreator artykułów
 
 **Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
@@ -89,11 +105,11 @@ Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materia
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
 3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
 4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
-5. **Gotowy materiał i opcja publikacji.** Zatwierdzony artykuł jest dostępny w aplikacji. Jeśli integracja będzie w zamówieniu, dodamy jedno uzgodnione połączenie CMS, mapowanie języków, harmonogram, obsługę błędów i potwierdzenie publikacji.
+5. **Eksport i opcja publikacji.** Artykuł pobieramy jako MD, HTML lub PDF; przy MD/HTML dostępna jest paczka z obrazami i metadanymi. Jeśli zamówimy integrację, dodamy jeden CMS, mapowanie języków, harmonogram, obsługę błędów i potwierdzenie publikacji.
 
 **Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** na uzgodnionym środowisku i wskazanej wersji sprawdzamy logowanie oraz przejście od formularza i serii XLSX do zatwierdzonych materiałów, z rzeczywistym AI i kosztem. Testujemy brak źródła, błędny link i wiersz, ponowny import, tłumaczenie, poprawki po akceptacji i izolację marek. Przy zamówionej integracji potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w CMS.
+**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w CMS.
 
 ## Ustalenia potrzebne do rozpoczęcia
 
@@ -109,7 +125,7 @@ Przygotujemy jedną ofertę i wspólny odbiór całego uzgodnionego procesu. Pod
 
 | Ustalenie | Co obejmuje |
 | --- | --- |
-| Podstawowy zakres aplikacji | Fundament, formularz i XLSX, źródła, agenci, serie, uzgodnione języki, obrazy, akceptacje i dostęp do gotowych artykułów |
+| Podstawowy zakres aplikacji | Fundament, formularz i XLSX, źródła, agenci, serie, języki, obrazy, akceptacje i eksport MD/HTML/PDF z paczką materiałów |
 | Opcjonalna integracja publikacji | Jeden wskazany CMS, jego pola, języki i harmonogram; decyzję o włączeniu podejmujemy przed zamknięciem oferty |
 
 Wycena uwzględni limity serii, języków, długości, korekt i budżetu AI. Dla encyklopedii lub słownika ustalimy pola haseł, indeks i linkowanie. Własna wtyczka CMS lub budowa strony wymagają jawnego uzgodnienia zakresu. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI.

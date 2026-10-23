@@ -177,7 +177,7 @@ story.append(Spacer(1, 6))
 story.append(para(steps[-1], "small"))
 story.append(para(intro_paragraphs[3], "small"))
 
-for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykułem", "Akceptacja i poprawki"]:
+for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykułem", "Akceptacja i poprawki", "Formaty artykułu i pobieranie"]:
     story.extend([PageBreak(), para(key, "h1")])
     if key == "Akceptacja i poprawki":
         story.append(PhaseStrip(["Kontrole agentów", "Akceptacje ludzi", "Termin i publikacja"]))
