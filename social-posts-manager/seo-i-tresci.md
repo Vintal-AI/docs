@@ -19,7 +19,7 @@ Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoc
 ## Jak powstaje artykuł
 
 1. **Wypełniamy zlecenie.** Jedno w formularzu albo wiele w Excelu lub zbiorczym widoku aplikacji. Wybieramy markę, temat, frazy, źródła i języki.
-2. **Agenci przygotowują treść.** Porządkują materiały, proponują frazy pokrewne i plan, piszą szkic, sprawdzają jakość oraz reguły SEO i wykonują poprawki.
+2. **Agenci tworzą i sprawdzają treść.** Porządkują źródła i plan, piszą szkic, robią review, kontrolują SEO i poprawiają materiał przed oceną człowieka.
 3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
 4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
 5. **Przekazujemy gotowy artykuł.** Po akceptacji materiał jest dostępny w aplikacji. Jeśli uzgodnimy integrację publikacji, trafi zgodnie z terminem na stronę właściwej marki i języka, z zapisanym wynikiem wysyłki.
@@ -52,6 +52,14 @@ Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działa
 | Tłumaczenia i korekty językowej | Wersja docelowa, sprawdzenie języka, terminologii i znaczenia |
 | Ilustracji i opisu alternatywnego | Opcjonalny obraz i opis zgodny z jego zawartością |
 
+### Kolejność pracy agentów
+
+1. Agent przygotowania sprawdza materiały, zgłasza braki i układa plan.
+2. Agent piszący tworzy szkic na podstawie planu i źródeł.
+3. Agent recenzujący robi review, a agent SEO sprawdza uzgodnione zasady.
+4. Agent korekty poprawia wskazane problemy; materiał przechodzi ponowne kontrole.
+5. W razie potrzeby agenci przygotowują tłumaczenie z korektą oraz obraz i alt. Komplet trafia do akceptacji człowieka.
+
 Role tworzą kontrolowaną sekwencję z limitem poprawek i kosztu. Trudny przypadek trafia do człowieka. Frazy pokrewne proponowane przez AI nie oznaczają zmierzonej popularności wyszukiwania.
 
 Z Krzysztofem ustalimy strukturę nagłówków, długość, użycie fraz, akapity, metadane i linki. Kontrole liczbowe wykona kod, agent oceni treść i zaproponuje poprawki. Liczba powtórzeń frazy jest regułą redakcyjną; unikamy nienaturalnego upychania słów, opisanego w [zasadach Google](https://developers.google.com/search/docs/essentials/spam-policies#keyword-stuffing).
@@ -70,7 +78,7 @@ Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materia
 
 **Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
-1. **Fundament aplikacji.** Logowanie, użytkownicy, dostęp do marek, dane i pliki, kolejka zadań oraz kontrola kosztów AI.
+1. **Setup i fundament aplikacji.** Nowe repozytorium, konfiguracja środowiska, automatyczne sprawdzenia i deploy, logowanie, dostęp do marek, dane, pliki, zadania i koszty AI. Planowany hosting: Fly.io; dostęp i zasoby wymagają potwierdzenia.
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii z tymi samymi polami, podglądem importu, błędami wierszy i szacunkiem kosztu przed generacją.
 3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
 4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
@@ -78,7 +86,7 @@ Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materia
 
 **Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** przechodzimy od formularza i przykładowej serii XLSX do zatwierdzonych materiałów, z rzeczywistym AI i zapisem kosztu. Sprawdzamy brak źródła, błędny link, wadliwy wiersz, ponowny import, tłumaczenie, poprawki po akceptacji i oddzielenie danych marek. Przy zamówionej integracji testujemy właściwy język, termin, blokadę bez zgód i brak duplikatu w docelowym CMS.
+**Odbiór:** na uzgodnionym środowisku i wskazanej wersji sprawdzamy logowanie oraz przejście od formularza i serii XLSX do zatwierdzonych materiałów, z rzeczywistym AI i kosztem. Testujemy brak źródła, błędny link i wiersz, ponowny import, tłumaczenie, poprawki po akceptacji i izolację marek. Przy zamówionej integracji potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w CMS.
 
 ## Ustalenia potrzebne do rozpoczęcia
 
