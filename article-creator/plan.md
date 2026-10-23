@@ -37,7 +37,7 @@ Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię z
 | Zdjęcia produktu, obrazki i grafiki | Materiał wejściowy do obejrzenia produktu, inspiracja lub ilustracja artykułu; wskazujemy rolę materiału |
 | Wklejona treść i opcjonalne linki | Materiały referencyjne, przykłady oraz odsyłacze |
 | Planowany termin | Data, godzina i strefa czasowa publikacji |
-| Obraz, opis alternatywny i ścieżka akceptacji | Opcjonalna ilustracja i wymagane osoby zatwierdzające |
+| Obraz, opis alternatywny i ścieżka akceptacji | Opcjonalna ilustracja oraz osoby zatwierdzające wybrane dla artykułu |
 
 **Kreator łączy te materiały w jedno zlecenie artykułu.** Można na przykład podać produkt, opis, zdjęcia, instrukcję i pytania klientów, a następnie zamówić poradnik o jego zastosowaniu. Produkt jest opcjonalny — tak samo można przygotować hasło słownikowe lub artykuł informacyjny.
 
@@ -77,9 +77,11 @@ Przekazane [wymagania SEO](https://vintal-ai.github.io/docs/article-creator/wyma
 
 ## Akceptacja i poprawki
 
-Po kontrolach AI artykuł trafia do właściciela. Schemat przewiduje następnie weryfikację SEO, copywritera i marketing managera. Wymagane poziomy oraz możliwość pominięcia wybranych etapów ustalamy dla marki. Agenci przygotowują materiał; akceptacje są decyzjami wskazanych osób.
+**Ścieżka akceptacji jest dynamiczna i ustawiana dla konkretnego artykułu.** Jeden artykuł może wymagać trzech osób z różnych działów, np. SEO, copywritera i marketing managera, a inny tylko jednej wskazanej osoby. Gdy wszyscy wymagani dla niego recenzenci zatwierdzą wersję, etap akceptacji jest zakończony. Właściciel artykułu nie jest obowiązkowym dodatkowym poziomem.
 
-Odrzucenie zawiera uwagi i kieruje materiał do poprawy oraz ponownej weryfikacji właściciela. Zmieniona treść ponownie przechodzi wymagane kontrole i akceptacje. Zgoda dotyczy konkretnej wersji tekstu, metadanych, obrazu i opisu alternatywnego.
+Marka może mieć ścieżkę domyślną; uprawniona osoba może dostosować listę recenzentów i kolejność do artykułu. Zmiany są zapisywane w historii i wymagają ponownego sprawdzenia kompletu zgód. Agenci przygotowują materiał; akceptacje są decyzjami ludzi.
+
+Odrzucenie zawiera uwagi i kieruje materiał do poprawy. Zmieniona treść ponownie przechodzi kontrole i akceptacje według ścieżki tego artykułu. Zgoda dotyczy konkretnej wersji tekstu, metadanych, obrazu i opisu alternatywnego.
 
 Każda wersja językowa ma osobny stan i miejsce publikacji: PL trafia na PL, ENG na ENG. Tłumaczenie wymaga sprawdzenia; akceptacja oryginału nie zatwierdza automatycznie tłumaczenia. Zależności między językami uzgodnimy przed realizacją.
 
@@ -110,18 +112,18 @@ Podany [przykład katalogu A–Z](https://casestudywriting.com/a-z-index.html#le
 1. **Setup i fundament aplikacji.** Nowe repozytorium, konfiguracja środowiska, automatyczne sprawdzenia i deploy, logowanie, dostęp do marek, dane, pliki, zadania i koszty AI. Planowany hosting: Fly.io; dostęp i zasoby wymagają potwierdzenia.
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
 3. **Tworzenie i kontrola treści.** Źródła, propozycje fraz bliskoznacznych i powiązanych, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
-4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
+4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz dynamiczna ścieżka akceptacji dla artykułu: np. jedna osoba albo trzy osoby z różnych działów. Poprawki wracają do przeglądu.
 5. **Eksport i opcja publikacji.** Artykuł pobieramy jako MD, HTML lub PDF; przy MD/HTML dostępna jest paczka z obrazami i metadanymi. Opcjonalnie dodamy publikację do sklepu Magmari: języki, harmonogram, obsługę błędów i potwierdzenie wyniku. API innych systemów pozostają na później.
 
 **Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy propozycje fraz, ich edycję i wykorzystanie w briefie oraz tekście; także źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w sklepie.
+**Odbiór:** sprawdzamy formularz, serię i ponowny import XLSX, błędy, źródła, propozycje fraz, ich edycję i użycie w tekście, rzeczywiste AI z kosztem, języki oraz izolację marek. Jeden artykuł wymaga jednej zgody, drugi trzech; brak wymaganej zgody wstrzymuje akceptację. Sprawdzamy zmianę ścieżki i poprawki tekstu. Tę samą rewizję pobieramy jako MD, HTML i PDF z obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu.
 
 ## Założenia do uzgodnienia
 
 1. **Zlecenie i limity:** marka, temat, język, materiały, długość artykułu, wolumen serii, limit kosztu i poprawek.
 2. **SEO:** profil przekazanych wymagań, blokady i ostrzeżenia; dane od redakcji czy automatyczne integracje GSC, indeksu witryny i wyników wyszukiwania?
-3. **Akceptacje:** kim jest właściciel, które poziomy są obowiązkowe, kto może je pominąć i kto ocenia tłumaczenia?
+3. **Akceptacje:** ścieżki domyślne, uprawnienia do zmiany recenzentów i kolejności dla artykułu oraz osoby oceniające tłumaczenia.
 4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
 5. **Publikacja i sukces:** czy włączamy integrację Magmari, jakie ma możliwości sklep, języki i terminy? Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
 
