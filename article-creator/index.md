@@ -16,6 +16,8 @@ MVP obejmuje jedno wdrożenie: setup nowego repozytorium i środowiska, input, t
 
 [Otwórz plan kreatora artykułów]({{ '/article-creator/plan/' | relative_url }}){: .btn .btn-primary }
 
+[Wymagania SEO artykułów i dokument źródłowy]({{ '/article-creator/wymagania-seo/' | relative_url }}) opisują reguły dla agentów i walidatora oraz elementy wymagające uzgodnienia szerszego zakresu.
+
 **Status:** osobna aplikacja zgodnie z wymaganiem przekazanym 23 października 2026. Zakres funkcjonalny MVP i wspólny odbiór; reguły SEO, limity, akceptacje i opcja publikacji do Magmari wymagają doprecyzowania.
 
 ## Propozycje rozwoju

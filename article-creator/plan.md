@@ -69,7 +69,7 @@ Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działa
 
 Role tworzą kontrolowaną sekwencję z limitem poprawek i kosztu. Trudny przypadek trafia do człowieka. Frazy pokrewne proponowane przez AI nie oznaczają zmierzonej popularności wyszukiwania.
 
-Z Krzysztofem ustalimy strukturę nagłówków, długość, użycie fraz, akapity, metadane i linki. Kontrole liczbowe wykona kod, agent oceni treść i zaproponuje poprawki. Liczba powtórzeń frazy jest regułą redakcyjną; unikamy nienaturalnego upychania słów, opisanego w [zasadach Google](https://developers.google.com/search/docs/essentials/spam-policies#keyword-stuffing).
+Przekazane [wymagania SEO](https://vintal-ai.github.io/docs/article-creator/wymagania-seo/) doprecyzowują strukturę, źródła, metadane i kontrole. Zasady będą edytowalne i wersjonowane. Kod sprawdzi wartości policzalne, agent oceni jakość, a człowiek zatwierdzi fakty. Indeks witryny, GSC i analiza TOP wyników wymagają uzgodnienia szerszego zakresu. Limity redakcyjne nie są uniwersalnymi progami Google.
 
 ## Akceptacja i poprawki
 
@@ -114,7 +114,7 @@ HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zale�
 ## Założenia do uzgodnienia
 
 1. **Zlecenie i limity:** marka, temat, język, materiały, długość artykułu, wolumen serii, limit kosztu i poprawek.
-2. **SEO:** konkretne wartości reguł, dobry przykład, błędy blokujące i ostrzeżenia; frazy pokrewne z AI czy z danych zewnętrznych?
+2. **SEO:** profil przekazanych wymagań, blokady i ostrzeżenia; dane od redakcji czy automatyczne integracje GSC, indeksu witryny i wyników wyszukiwania?
 3. **Akceptacje:** kim jest właściciel, które poziomy są obowiązkowe, kto może je pominąć i kto ocenia tłumaczenia?
 4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
 5. **Publikacja i sukces:** czy włączamy integrację Magmari, jakie ma możliwości sklep, języki i terminy? Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
