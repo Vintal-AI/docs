@@ -9,12 +9,18 @@ permalink: /
 
 Plany i propozycje rozwoju projektów, zebrane w jednym miejscu do wspólnego czytania i omawiania.
 
+## Kreator artykułów
+
+Osobna aplikacja do artykułów: agenci AI, formularz i Excel, źródła, akceptacje, języki i publikacja. Działa niezależnie od Social Posts Managera.
+
+[Poznaj projekt]({{ '/article-creator/' | relative_url }}){: .btn }
+[Przeczytaj plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+
 ## Social Posts Manager
 
-Aplikacja wspierająca przygotowanie i zarządzanie treściami marek. Dokumentacja opisuje kierunki rozwoju oraz sposób wykorzystania wiedzy o produktach i potrzebach klientów.
+Oddzielny projekt do przygotowania i zarządzania treściami społecznościowymi marek.
 
-[Poznaj projekt]({{ '/social-posts-manager/' | relative_url }}){: .btn }
-[Przeczytaj plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+[Przejdź do Social Posts Managera]({{ '/social-posts-manager/' | relative_url }}){: .btn }
 
 ## Jak czytać plany
 
@@ -24,7 +30,7 @@ Aplikacja wspierająca przygotowanie i zarządzanie treściami marek. Dokumentac
 
 | Dokument | Status | Cel |
 | --- | --- | --- |
-| [Kreator artykułów z agentami AI]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Kierunek z 23.10.2026, etapowanie do uzgodnienia | Formularz i Excel, agenci, akceptacje, języki i publikacja; dostępny opis w PDF |
+| [Kreator artykułów z agentami AI]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Osobna aplikacja, kierunek z 23.10.2026 | Fundament projektu, formularz i Excel, agenci, akceptacje, języki i publikacja; dostępny PDF |
 
 ## Następne kroki
 

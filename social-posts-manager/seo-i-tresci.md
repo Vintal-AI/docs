@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kreator artykułów z agentami AI
-parent: Social Posts Manager
+parent: Kreator artykułów
 nav_order: 1
 permalink: /social-posts-manager/seo-i-tresci/
 ---
@@ -10,7 +10,7 @@ permalink: /social-posts-manager/seo-i-tresci/
 
 **Kierunek po zmianie zakresu z 23 października 2026. Podział na fazy jest propozycją do wyceny.**
 
-Przygotowujemy artykuły dla wielu marek: od tematu i materiałów, przez pracę agentów AI i akceptację zespołu, do publikacji w odpowiedniej wersji językowej strony. Artykuły mogą tworzyć poradnik, encyklopedię lub słownik pojęć, z odsyłaczami między powiązanymi materiałami.
+Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz publikację we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
 
 Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Ten plan zastępuje wcześniejszy podział na fazy; wcześniejsze szacunki cen wymagają ponownego przeliczenia.
 
@@ -70,7 +70,7 @@ Termin w kalendarzu nie zastępuje akceptacji. Materiał bez wymaganych zgód po
 
 **Cel:** sprawdzić proces redakcyjny na rzeczywistym zleceniu.
 
-Przygotujemy formularz przy marce, obsługę treści źródłowych i sprawdzania linków, agentów planowania, pisania, recenzji, SEO i korekty. Dojdą edycja, wersje oraz akceptacja właściciela z pętlą uwag. Pilot obejmie jedną markę i jeden język, z zachowaniem oddzielenia danych wielu klientów.
+Uruchomimy fundament osobnej aplikacji: logowanie, dostęp do marek, przechowywanie danych i plików oraz kontrolę zadań i kosztów AI. Przygotujemy formularz przy marce, źródła, sprawdzanie linków i agentów planowania, pisania, recenzji, SEO oraz korekty. Dojdą edycja, wersje i akceptacja właściciela z pętlą uwag. Pilot obejmie jedną markę i jeden język, z oddzieleniem danych klientów.
 
 **Rezultat:** działający proces od zlecenia do zatwierdzonego artykułu i raportu kontroli. Produkt może dostarczać kontekstu, ale nie jest obowiązkowym typem artykułu. Import seryjny, tłumaczenia i publikacja są w kolejnych fazach.
 
@@ -112,11 +112,11 @@ Po sprawdzeniu docelowego CMS przygotujemy jedno uzgodnione połączenie: treś�
 
 | Pakiet | Rezultat | Zależność |
 | --- | --- | --- |
-| Faza 1 | Artykuł z agentami, kontrolą i akceptacją | Zlecenie i zasady SEO |
+| Faza 1 | Osobna aplikacja i artykuł z agentami, kontrolą i akceptacją | Fundament aplikacji, zlecenie i zasady SEO |
 | Faza 2 | Excel, serie, języki, obrazy i akceptacje zespołu | Wolumen, języki, role i budżet AI |
 | Faza 3 | Jeden CMS i publikacja w terminie | Dostęp, pola i obsługa języków |
 
-Każda faza ma osobny odbiór. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI. Posty społecznościowe pozostają możliwym rozszerzeniem.
+Każda faza ma osobny odbiór. Wycena Fazy 1 obejmie fundament nowej aplikacji; nie zakładamy dostępnych funkcji Social Posts Managera. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI. Połączenie z Social Posts Managerem wymagałoby osobnego zakresu.
 
 ## Następne kroki
 
