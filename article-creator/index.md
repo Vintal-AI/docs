@@ -12,11 +12,11 @@ Osobna aplikacja do przygotowywania artykułów z agentami AI, obsługująca wie
 
 ## Plan realizacji
 
-Proponujemy trzy osobno wyceniane fazy: fundament aplikacji i pojedynczy artykuł, pracę seryjną z Excelem i językami oraz integrację publikacji. Szczegółowy plan i PDF opisują agentów, źródła, poprawki oraz kryteria odbioru.
+Projekt obejmuje jedną fazę wdrożenia: input, tworzenie i sprawdzanie treści, akceptacje oraz opcjonalną integrację publikacji. Formularz, Excel, serie i języki są elementami tego samego zakresu. Szczegółowy plan i PDF opisują agentów, źródła, poprawki oraz kryteria odbioru.
 
 [Otwórz plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
 
-**Status:** osobna aplikacja zgodnie z wymaganiem przekazanym 23 października 2026. Szczegóły faz, reguł SEO i akceptacji wymagają uzgodnienia.
+**Status:** osobna aplikacja zgodnie z wymaganiem przekazanym 23 października 2026. Jedna oferta i wspólny odbiór; reguły SEO, limity, akceptacje i opcja CMS wymagają doprecyzowania.
 
 ## Następne kroki
 

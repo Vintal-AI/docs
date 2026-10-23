@@ -8,9 +8,9 @@ permalink: /social-posts-manager/seo-i-tresci/
 
 # Kreator artykułów z agentami AI
 
-**Kierunek po zmianie zakresu z 23 października 2026. Podział na fazy jest propozycją do wyceny.**
+**Jedna faza wdrożenia osobnej aplikacji. Aktualizacja zakresu: 23 października 2026.**
 
-Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz publikację we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
+Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz opcjonalną integrację publikacji we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
 
 Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Ten plan zastępuje wcześniejszy podział na fazy; wcześniejsze szacunki cen wymagają ponownego przeliczenia.
 
@@ -22,9 +22,9 @@ Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoc
 2. **Agenci przygotowują treść.** Porządkują materiały, proponują frazy pokrewne i plan, piszą szkic, sprawdzają jakość oraz reguły SEO i wykonują poprawki.
 3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
 4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
-5. **Publikujemy zgodnie z planem.** Zatwierdzony materiał trafia przez uzgodnione połączenie na stronę właściwej marki i języka. System zapisuje wynik publikacji.
+5. **Przekazujemy gotowy artykuł.** Po akceptacji materiał jest dostępny w aplikacji. Jeśli uzgodnimy integrację publikacji, trafi zgodnie z terminem na stronę właściwej marki i języka, z zapisanym wynikiem wysyłki.
 
-Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię zmian oraz koszt AI. Zakres dostępny w kolejnych fazach opisujemy poniżej.
+Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię zmian oraz koszt AI. Całość stanowi jeden zakres wdrożenia; poniżej opisujemy jego elementy.
 
 ## Zlecenie i materiały źródłowe
 
@@ -64,41 +64,21 @@ Odrzucenie zawiera uwagi i kieruje materiał do poprawy oraz ponownej weryfikacj
 
 Każda wersja językowa ma osobny stan i miejsce publikacji: PL trafia na PL, ENG na ENG. Tłumaczenie wymaga sprawdzenia; akceptacja oryginału nie zatwierdza automatycznie tłumaczenia. Zależności między językami uzgodnimy przed realizacją.
 
-Termin w kalendarzu nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
+Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
 
-## Faza 1 Pojedynczy artykuł i podstawowi agenci
+## Jedna faza Pełny kreator artykułów
 
-**Cel:** sprawdzić proces redakcyjny na rzeczywistym zleceniu.
+**Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
-Uruchomimy fundament osobnej aplikacji: logowanie, dostęp do marek, przechowywanie danych i plików oraz kontrolę zadań i kosztów AI. Przygotujemy formularz przy marce, źródła, sprawdzanie linków i agentów planowania, pisania, recenzji, SEO oraz korekty. Dojdą edycja, wersje i akceptacja właściciela z pętlą uwag. Pilot obejmie jedną markę i jeden język, z oddzieleniem danych klientów.
+1. **Fundament aplikacji.** Logowanie, użytkownicy, dostęp do marek, dane i pliki, kolejka zadań oraz kontrola kosztów AI.
+2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii z tymi samymi polami, podglądem importu, błędami wierszy i szacunkiem kosztu przed generacją.
+3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
+4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
+5. **Gotowy materiał i opcja publikacji.** Zatwierdzony artykuł jest dostępny w aplikacji. Jeśli integracja będzie w zamówieniu, dodamy jedno uzgodnione połączenie CMS, mapowanie języków, harmonogram, obsługę błędów i potwierdzenie publikacji.
 
-**Rezultat:** działający proces od zlecenia do zatwierdzonego artykułu i raportu kontroli. Produkt może dostarczać kontekstu, ale nie jest obowiązkowym typem artykułu. Import seryjny, tłumaczenia i publikacja są w kolejnych fazach.
+**Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** artykuł powstaje z zapisanych źródeł, brak informacji jest zgłaszany, niedostępny link wymaga uzupełnienia, a uwagi prowadzą do nowej wersji i ponownej akceptacji. Pokazujemy rzeczywisty wynik i koszt AI. Przed wyceną ustalamy długość materiałów, zasady SEO, limit prób i budżet.
-
-## Faza 2 Serie artykułów i wersje językowe
-
-**Cel:** regularna praca zespołu nad wieloma artykułami.
-
-Dodamy templatkę XLSX oraz zbiorczy widok aplikacji z tymi samymi polami. Import pokaże podgląd, błędy wierszy, szacowany koszt i liczbę zleceń przed uruchomieniem agentów. Każdy artykuł ma osobny wynik i możliwość poprawienia błędu.
-
-Rozwiniemy ścieżki akceptacji SEO, copywritera i marketing managera, tłumaczenie oraz korektę językową. Dodamy przesłany lub wygenerowany obraz i opis alternatywny. Materiały i reguły są przypisane do właściwej marki.
-
-**Rezultat:** kolejka artykułów, praca zbiorcza, wersje językowe i pełna ścieżka redakcyjna.
-
-**Odbiór:** formularz i Excel tworzą równoważne zlecenia; wadliwy wiersz jest opisany; ponowny import nie powiela zlecenia; marka nie ujawnia danych innej marki. Tłumaczenie i obraz przechodzą wymagane sprawdzenia, a zmiana materiału wymaga ponownego przeglądu.
-
-## Faza 3 Integracja i publikacja w terminie
-
-**Cel:** przekazywanie zatwierdzonych artykułów do właściwej strony i wersji językowej.
-
-Po sprawdzeniu docelowego CMS przygotujemy jedno uzgodnione połączenie: treść, metadane, obraz, opis alternatywny i linki, w zakresie obsługiwanym przez stronę. Zaplanujemy publikację, pokażemy błędy i zapiszemy docelowy adres. Ponowienie nie powinno tworzyć drugiego wpisu.
-
-**Rezultat:** zatwierdzona wersja trafia zgodnie z terminem do odpowiedniej sekcji językowej. Dla encyklopedii lub słownika ustalimy pola hasła, indeks i linkowanie. Budowa nowej strony lub własnej wtyczki CMS wymaga osobnej wyceny.
-
-**Odbiór:** test na uzgodnionym środowisku potwierdza język, treść i termin; brak akceptacji blokuje wysyłkę; ponowienie nie tworzy duplikatu. Publikację potwierdzamy po stronie docelowej.
-
-**Główna zależność:** możliwości CMS, dostęp i mapowanie języków. Każda kolejna integracja ma osobny zakres.
+**Odbiór:** przechodzimy od formularza i przykładowej serii XLSX do zatwierdzonych materiałów, z rzeczywistym AI i zapisem kosztu. Sprawdzamy brak źródła, błędny link, wadliwy wiersz, ponowny import, tłumaczenie, poprawki po akceptacji i oddzielenie danych marek. Przy zamówionej integracji testujemy właściwy język, termin, blokadę bez zgód i brak duplikatu w docelowym CMS.
 
 ## Ustalenia potrzebne do rozpoczęcia
 
@@ -108,18 +88,19 @@ Po sprawdzeniu docelowego CMS przygotujemy jedno uzgodnione połączenie: treś�
 4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
 5. **Publikacja i sukces:** CMS, struktura słownika, języki, strefa czasowa i zachowanie po terminie. Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
 
-## Pakiety do osobnej wyceny
+## Zakres i wycena jednego wdrożenia
 
-| Pakiet | Rezultat | Zależność |
-| --- | --- | --- |
-| Faza 1 | Osobna aplikacja i artykuł z agentami, kontrolą i akceptacją | Fundament aplikacji, zlecenie i zasady SEO |
-| Faza 2 | Excel, serie, języki, obrazy i akceptacje zespołu | Wolumen, języki, role i budżet AI |
-| Faza 3 | Jeden CMS i publikacja w terminie | Dostęp, pola i obsługa języków |
+Przygotujemy jedną ofertę i wspólny odbiór całego uzgodnionego procesu. Podział na input, agentów, redakcję i publikację porządkuje funkcje i zadania wykonawcze, bez osobnych faz ofertowych.
 
-Każda faza ma osobny odbiór. Wycena Fazy 1 obejmie fundament nowej aplikacji; nie zakładamy dostępnych funkcji Social Posts Managera. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI. Połączenie z Social Posts Managerem wymagałoby osobnego zakresu.
+| Ustalenie | Co obejmuje |
+| --- | --- |
+| Podstawowy zakres aplikacji | Fundament, formularz i XLSX, źródła, agenci, serie, uzgodnione języki, obrazy, akceptacje i dostęp do gotowych artykułów |
+| Opcjonalna integracja publikacji | Jeden wskazany CMS, jego pola, języki i harmonogram; decyzję o włączeniu podejmujemy przed zamknięciem oferty |
+
+Wycena uwzględni limity serii, języków, długości, korekt i budżetu AI. Dla encyklopedii lub słownika ustalimy pola haseł, indeks i linkowanie. Własna wtyczka CMS lub budowa strony wymagają jawnego uzgodnienia zakresu. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI.
 
 ## Następne kroki
 
-1. Wybrać rzeczywiste zlecenie i zatwierdzić reguły oraz odbiór Fazy 1.
-2. Uzgodnić pola templatki, języki i osoby zatwierdzające dla Fazy 2.
-3. Wskazać CMS oraz ustalić integrację przed wyceną Fazy 3.
+1. Uzgodnić zakres jednej oferty, limity, reguły SEO i scenariusz odbioru na rzeczywistych materiałach.
+2. Potwierdzić języki, obrazy, pola XLSX i osoby zatwierdzające.
+3. Zdecydować o integracji publikacji i wskazać CMS; przygotować osobny projekt aplikacji.

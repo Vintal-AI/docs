@@ -25,4 +25,4 @@ Weryfikacja lokalna może korzystać z kontenera Ruby 3.3: instalacja zależnoś
 
 ## Następne kroki
 
-Reguły SEO artykułu, akceptacje i zakres etapów należy uzgodnić z zespołem przed oznaczeniem szczegółów jako zatwierdzonych.
+Reguły SEO artykułu, akceptacje i zakres jednego wdrożenia należy uzgodnić z zespołem przed oznaczeniem szczegółów jako zatwierdzonych.

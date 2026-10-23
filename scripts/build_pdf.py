@@ -183,18 +183,13 @@ for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykuł
         story.append(PhaseStrip(["Kontrole agentów", "Akceptacje ludzi", "Termin i publikacja"]))
     story.extend(markdown_blocks(sections[key]))
 
-phase_keys = [k for k in sections if k.startswith("Faza ")]
-strips = [
-    ["Zlecenie i źródła", "Agenci i poprawki", "Zgoda właściciela"],
-    ["Excel lub formularz", "Serie i języki", "Akceptacje zespołu"],
-    ["Zatwierdzona wersja", "Termin i język", "Publikacja w CMS"],
-]
-for key, labels in zip(phase_keys, strips):
-    story.extend([PageBreak(), para(key, "h1"), PhaseStrip(labels)])
-    story.extend(markdown_blocks(sections[key]))
+scope_key = "Jedna faza Pełny kreator artykułów"
+story.extend([PageBreak(), para(scope_key, "h1"),
+              PhaseStrip(["Input i materiały", "Agenci i akceptacje", "Artykuł i opcja CMS"])])
+story.extend(markdown_blocks(sections[scope_key]))
 
-story.extend([PageBreak(), para("Ustalenia i osobne pakiety", "h1")])
-for key in ["Ustalenia potrzebne do rozpoczęcia", "Pakiety do osobnej wyceny", "Następne kroki"]:
+story.extend([PageBreak(), para("Ustalenia i wycena wdrożenia", "h1")])
+for key in ["Ustalenia potrzebne do rozpoczęcia", "Zakres i wycena jednego wdrożenia", "Następne kroki"]:
     story.append(para(key, "h2"))
     story.extend(markdown_blocks(sections[key]))
 
