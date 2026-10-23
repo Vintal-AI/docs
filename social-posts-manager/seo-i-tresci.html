@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /social-posts-manager/seo-i-tresci/
+nav_exclude: true
+search_exclude: true
+---
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kreator artykułów — nowy adres</title>
+  <link rel="canonical" href="{{ '/article-creator/plan/' | absolute_url }}">
+  <meta name="robots" content="noindex">
+  <script>
+    window.location.replace({{ '/article-creator/plan/' | relative_url | jsonify }} + window.location.search + window.location.hash);
+  </script>
+  <meta http-equiv="refresh" content="0; url={{ '/article-creator/plan/' | relative_url }}">
+</head>
+<body>
+  <p>Plan kreatora artykułów ma nowy adres: <a href="{{ '/article-creator/plan/' | relative_url }}">otwórz plan kreatora artykułów</a>.</p>
+</body>
+</html>

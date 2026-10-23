@@ -14,7 +14,7 @@ Osobna aplikacja do przygotowywania artykułów z agentami AI, obsługująca wie
 
 MVP obejmuje jedno wdrożenie: setup nowego repozytorium i środowiska, input, tworzenie i sprawdzanie treści, akceptacje, eksport Markdown/HTML/PDF oraz opcjonalną integrację wyłącznie ze sklepem Magmari. Integracje API innych systemów są późniejszym, osobno wycenianym rozszerzeniem. Formularz, Excel, serie i języki są elementami tego samego zakresu. Planowany hosting to Fly.io, po potwierdzeniu dostępu i zasobów. Szczegółowy plan i PDF opisują agentów, źródła, poprawki oraz kryteria odbioru.
 
-[Otwórz plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+[Otwórz plan kreatora artykułów]({{ '/article-creator/plan/' | relative_url }}){: .btn .btn-primary }
 
 **Status:** osobna aplikacja zgodnie z wymaganiem przekazanym 23 października 2026. Zakres funkcjonalny MVP i wspólny odbiór; reguły SEO, limity, akceptacje i opcja publikacji do Magmari wymagają doprecyzowania.
 
@@ -22,4 +22,4 @@ MVP obejmuje jedno wdrożenie: setup nowego repozytorium i środowiska, input, t
 
 Osobno można rozważyć agenta decyzyjnego korekty językowej, kolejne integracje API oraz planery serii i kampanii postów. Są to rozszerzenia poza obecną ofertą.
 
-[Zobacz propozycje rozwoju]({{ '/social-posts-manager/seo-i-tresci/#propozycje-rozwoju' | relative_url }})
+[Zobacz propozycje rozwoju]({{ '/article-creator/plan/#propozycje-rozwoju' | relative_url }})

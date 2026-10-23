@@ -14,7 +14,7 @@ Plany i propozycje rozwoju projektów, zebrane w jednym miejscu do wspólnego cz
 Osobna aplikacja do artykułów: agenci AI, formularz i Excel, źródła, akceptacje, języki i publikacja. Działa niezależnie od Social Posts Managera.
 
 [Poznaj projekt]({{ '/article-creator/' | relative_url }}){: .btn }
-[Przeczytaj plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+[Przeczytaj plan kreatora artykułów]({{ '/article-creator/plan/' | relative_url }}){: .btn .btn-primary }
 
 ## Social Posts Manager
 
@@ -30,7 +30,7 @@ Oddzielny projekt do przygotowania i zarządzania treściami społecznościowymi
 
 | Dokument | Status | Cel |
 | --- | --- | --- |
-| [Kreator artykułów z agentami AI]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Osobna aplikacja, kierunek z 23.10.2026 | Fundament projektu, formularz i Excel, agenci, akceptacje, języki i publikacja; dostępny PDF |
+| [Kreator artykułów z agentami AI]({{ '/article-creator/plan/' | relative_url }}) | Osobna aplikacja, kierunek z 23.10.2026 | Fundament projektu, formularz i Excel, agenci, akceptacje, języki i publikacja; dostępny PDF |
 
 ## Następne kroki
 

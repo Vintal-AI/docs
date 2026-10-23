@@ -15,7 +15,7 @@ from reportlab.platypus import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "social-posts-manager/seo-i-tresci.md"
+SOURCE = ROOT / "article-creator/plan.md"
 OUTPUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "assets/pdf/magmari-plan-etapow.pdf"
 FONT_PAIRS = [
     (os.getenv("DOCS_FONT_REGULAR", ""), os.getenv("DOCS_FONT_BOLD", "")),
@@ -155,8 +155,8 @@ def page_frame(c, doc):
     c.setStrokeColor(LINE)
     c.line(42, 45, 553, 45)
     c.setFont("Docs", 8)
-    c.drawString(42, 30, "vintal-ai.github.io/docs/social-posts-manager/seo-i-tresci/")
-    c.linkURL("https://vintal-ai.github.io/docs/social-posts-manager/seo-i-tresci/", (42, 26, 455, 40), relative=0)
+    c.drawString(42, 30, "vintal-ai.github.io/docs/article-creator/plan/")
+    c.linkURL("https://vintal-ai.github.io/docs/article-creator/plan/", (42, 26, 455, 40), relative=0)
     c.drawRightString(553, 30, str(doc.page))
 
 

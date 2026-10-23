@@ -3,7 +3,7 @@ layout: default
 title: Kreator artykułów z agentami AI
 parent: Kreator artykułów
 nav_order: 1
-permalink: /social-posts-manager/seo-i-tresci/
+permalink: /article-creator/plan/
 ---
 
 # Kreator artykułów z agentami AI
