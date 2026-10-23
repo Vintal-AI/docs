@@ -8,11 +8,11 @@ permalink: /social-posts-manager/seo-i-tresci/
 
 # Kreator artykułów z agentami AI
 
-**Jedna faza wdrożenia osobnej aplikacji. Aktualizacja zakresu: 23 października 2026.**
+**MVP osobnej aplikacji w jednym wdrożeniu. Aktualizacja zakresu: 23 października 2026.**
 
 Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz opcjonalną publikację do sklepu Magmari we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
 
-Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Propozycja obejmuje jedno wdrożenie; możliwe rozszerzenia opisujemy osobno w propozycjach rozwoju.
+Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Propozycja obejmuje wdrożenie MVP; możliwe rozszerzenia opisujemy osobno w propozycjach rozwoju.
 
 [Pobierz opis w PDF]({{ '/assets/pdf/magmari-plan-etapow.pdf' | relative_url }}){: .btn .btn-primary }
 
@@ -97,9 +97,9 @@ Eksport wskazuje konkretną wersję i język; szkic oznaczamy jako roboczy. Zmia
 
 HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zależy od strony docelowej. W tej fazie automatyczna wysyłka przez API może objąć wyłącznie sklep Magmari. Integracje z pozostałymi systemami odkładamy do kolejnej, osobno uzgadnianej fazy. Pobranie pliku nie oznacza publikacji.
 
-## Jedno wdrożenie kreatora artykułów
+## MVP kreatora artykułów
 
-**Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
+**Cel:** dostarczyć MVP osobnej aplikacji obsługujące cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
 1. **Setup i fundament aplikacji.** Nowe repozytorium, konfiguracja środowiska, automatyczne sprawdzenia i deploy, logowanie, dostęp do marek, dane, pliki, zadania i koszty AI. Planowany hosting: Fly.io; dostęp i zasoby wymagają potwierdzenia.
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
@@ -119,16 +119,11 @@ HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zale�
 4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
 5. **Publikacja i sukces:** czy włączamy integrację Magmari, jakie ma możliwości sklep, języki i terminy? Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
 
-## Zakres i wycena jednego wdrożenia
+## Zakres MVP
 
-Przygotujemy jedną ofertę i wspólny odbiór całego uzgodnionego procesu. Podział na input, agentów, redakcję i publikację porządkuje funkcje i zadania wykonawcze, bez osobnych faz ofertowych.
+Zakres MVP stanowią funkcje opisane powyżej w sekcji „MVP kreatora artykułów”. Opcjonalna publikacja do sklepu Magmari może zostać włączona po potwierdzeniu jej zakresu.
 
-| Ustalenie | Co obejmuje |
-| --- | --- |
-| Podstawowy zakres aplikacji | Fundament, formularz i XLSX, źródła, agenci, serie, języki, obrazy, akceptacje i eksport MD/HTML/PDF z paczką materiałów |
-| Opcjonalna publikacja do Magmari | Wyłącznie sklep Magmari, jego pola, języki i harmonogram; możliwości połączenia i włączenie opcji ustalamy przed wyceną |
-
-Wycena uwzględni limity serii, języków, długości, korekt i budżetu AI. Dla encyklopedii lub słownika ustalimy pola haseł, indeks i linkowanie. Własna wtyczka CMS lub budowa strony wymagają jawnego uzgodnienia zakresu. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI.
+Propozycje rozwoju z kolejnej sekcji są odrębnymi rozszerzeniami poza MVP. Ten opis określa zakres funkcjonalny; kwoty i warunki handlowe ustalamy odrębnie.
 
 ## Propozycje rozwoju
 

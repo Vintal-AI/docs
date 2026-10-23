@@ -183,13 +183,13 @@ for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykuł
         story.append(PhaseStrip(["Kontrole agentów", "Akceptacje ludzi", "Termin i publikacja"]))
     story.extend(markdown_blocks(sections[key]))
 
-scope_key = "Jedno wdrożenie kreatora artykułów"
+scope_key = "MVP kreatora artykułów"
 story.extend([PageBreak(), para(scope_key, "h1"),
               PhaseStrip(["Input i materiały", "Agenci i akceptacje", "Eksport / Magmari"])])
 story.extend(markdown_blocks(sections[scope_key]))
 
-story.extend([PageBreak(), para("Ustalenia i wycena wdrożenia", "h1")])
-for key in ["Założenia do uzgodnienia", "Zakres i wycena jednego wdrożenia"]:
+story.extend([PageBreak(), para("Założenia i zakres MVP", "h1")])
+for key in ["Założenia do uzgodnienia", "Zakres MVP"]:
     story.append(para(key, "h2"))
     story.extend(markdown_blocks(sections[key]))
 
