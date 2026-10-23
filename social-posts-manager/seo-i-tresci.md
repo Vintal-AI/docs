@@ -18,7 +18,7 @@ Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoc
 
 ## Jak powstaje artykuł
 
-1. **Wypełniamy zlecenie.** Jedno w formularzu albo wiele w Excelu lub zbiorczym widoku aplikacji. Wybieramy markę, temat, frazy, źródła i języki.
+1. **Dodajemy temat i materiały.** W formularzu albo zbiorczo przez Excel podajemy markę, temat, frazy i języki oraz produkt, opisy, zdjęcia, grafiki i informacje potrzebne do artykułu.
 2. **Agenci tworzą i sprawdzają treść.** Porządkują źródła i plan, piszą szkic, robią review, kontrolują SEO i poprawiają materiał przed oceną człowieka.
 3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
 4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
@@ -32,9 +32,16 @@ Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię z
 | --- | --- |
 | Marka, temat i główna fraza | Oddzielenie klientów i określenie zawartości artykułu |
 | Wymagania i języki | Odbiorca, styl, zakres i wersje językowe |
-| Treść źródłowa i opcjonalne linki | Podstawa informacji, przykładów i odsyłaczy |
+| Produkt i jego opis | Nazwa, przeznaczenie, cechy, zastosowania i ograniczenia podane przez zespół |
+| Instrukcje, specyfikacje i dodatkowe informacje | Fakty, sposób użycia, pytania klientów i odpowiedzi potrzebne do treści |
+| Zdjęcia produktu, obrazki i grafiki | Materiał wejściowy do obejrzenia produktu, inspiracja lub ilustracja artykułu; wskazujemy rolę materiału |
+| Wklejona treść i opcjonalne linki | Materiały referencyjne, przykłady oraz odsyłacze |
 | Planowany termin | Data, godzina i strefa czasowa publikacji |
 | Obraz, opis alternatywny i ścieżka akceptacji | Opcjonalna ilustracja i wymagane osoby zatwierdzające |
+
+**Kreator łączy te materiały w jedno zlecenie artykułu.** Można na przykład podać produkt, opis, zdjęcia, instrukcję i pytania klientów, a następnie zamówić poradnik o jego zastosowaniu. Produkt jest opcjonalny — tak samo można przygotować hasło słownikowe lub artykuł informacyjny.
+
+Zdjęcie źródłowe i obraz do publikacji mogą być różnymi plikami. Wskazujemy, co agent ma uwzględnić, a co ma znaleźć się w gotowym artykule. Zdjęcia pomagają opisać wygląd i dobrać ilustrację; parametry, skuteczność oraz instrukcje muszą wynikać z dostarczonych informacji.
 
 **Preferujemy wklejoną treść i materiały dostępne w aplikacji.** Link jest uzupełnieniem: system sprawdzi możliwość odczytu i zapisze pobraną treść. Niedostępna strona lub logowanie oznaczają prośbę o wklejenie materiału. Sam adres nie jest przeczytanym źródłem.
 
@@ -54,7 +61,7 @@ Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działa
 
 ### Kolejność pracy agentów
 
-1. Agent przygotowania sprawdza materiały, zgłasza braki i układa plan.
+1. Agent przygotowania porządkuje opis produktu, informacje i materiały wizualne, sprawdza źródła, zgłasza braki i układa plan.
 2. Agent piszący tworzy szkic na podstawie planu i źródeł.
 3. Agent recenzujący robi review, a agent SEO sprawdza uzgodnione zasady.
 4. Agent korekty poprawia wskazane problemy; materiał przechodzi ponowne kontrole.
@@ -79,7 +86,7 @@ Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materia
 **Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
 1. **Setup i fundament aplikacji.** Nowe repozytorium, konfiguracja środowiska, automatyczne sprawdzenia i deploy, logowanie, dostęp do marek, dane, pliki, zadania i koszty AI. Planowany hosting: Fly.io; dostęp i zasoby wymagają potwierdzenia.
-2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii z tymi samymi polami, podglądem importu, błędami wierszy i szacunkiem kosztu przed generacją.
+2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
 3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
 4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
 5. **Gotowy materiał i opcja publikacji.** Zatwierdzony artykuł jest dostępny w aplikacji. Jeśli integracja będzie w zamówieniu, dodamy jedno uzgodnione połączenie CMS, mapowanie języków, harmonogram, obsługę błędów i potwierdzenie publikacji.
