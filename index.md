@@ -14,7 +14,7 @@ Plany i propozycje rozwoju projektów, zebrane w jednym miejscu do wspólnego cz
 Aplikacja wspierająca przygotowanie i zarządzanie treściami marek. Dokumentacja opisuje kierunki rozwoju oraz sposób wykorzystania wiedzy o produktach i potrzebach klientów.
 
 [Poznaj projekt]({{ '/social-posts-manager/' | relative_url }}){: .btn }
-[Przeczytaj plan SEO i treści dla Magmari]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+[Przeczytaj plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
 
 ## Jak czytać plany
 
@@ -24,8 +24,8 @@ Aplikacja wspierająca przygotowanie i zarządzanie treściami marek. Dokumentac
 
 | Dokument | Status | Cel |
 | --- | --- | --- |
-| [Treści i SEO dla Magmari]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Propozycja trzech faz do omówienia | Demo na produkcie, regularna produkcja treści i asystent analizy SEO; dostępny opis w PDF |
+| [Kreator artykułów z agentami AI]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}) | Kierunek z 23.10.2026, etapowanie do uzgodnienia | Formularz i Excel, agenci, akceptacje, języki i publikacja; dostępny opis w PDF |
 
 ## Następne kroki
 
-Przeczytaj plan SEO i przekaż uwagi osobie prowadzącej projekt. Pytania i zależności potrzebne do ustalenia pilota znajdują się na końcu dokumentu.
+Przeczytaj plan kreatora i przekaż uwagi osobie prowadzącej projekt. Ustalenia potrzebne do rozpoczęcia znajdują się na końcu dokumentu.

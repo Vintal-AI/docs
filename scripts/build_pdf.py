@@ -148,10 +148,10 @@ def page_frame(c, doc):
     c.setFillColor(PURPLE)
     c.rect(42, 797, 28, 4, fill=1, stroke=0)
     c.setFont("DocsBold", 9)
-    c.drawString(79, 795, "VINTAL / MAGMARI")
+    c.drawString(79, 795, "VINTAL / ARTYKUŁY AI")
     c.setFillColor(MUTED)
     c.setFont("Docs", 8)
-    c.drawRightString(553, 795, "Propozycja do omówienia | 22.10.2026")
+    c.drawRightString(553, 795, "Propozycja do omówienia | 23.10.2026")
     c.setStrokeColor(LINE)
     c.line(42, 45, 553, 45)
     c.setFont("Docs", 8)
@@ -167,36 +167,39 @@ parts = re.split(r"^## (.+)$", body, flags=re.M)
 intro = parts[0]
 sections = {parts[i]: parts[i + 1].strip() for i in range(1, len(parts), 2)}
 
-story = [para("Wiedza Magmari.<br/>Przydatne treści.<br/>Rozwój SEO.", "h1")]
+story = [para("Kreator artykułów.<br/>Agenci AI.<br/>Akceptacja i publikacja.", "h1")]
 intro_paragraphs = re.split(r"\n\s*\n", intro.strip())
-story += [para(intro_paragraphs[-1]), para("Jak będzie działał system", "h2")]
-steps = sections["Jak będzie działał system"].split("\n\n")
+story += [para(intro_paragraphs[2]), para("Jak powstaje artykuł", "h2")]
+steps = sections["Jak powstaje artykuł"].split("\n\n")
 for i, line in enumerate(steps[0].splitlines(), 1):
     story.append(StepCard(i, re.sub(r"^\d+\. ", "", line)))
 story.append(Spacer(1, 6))
 story.append(para(steps[-1], "small"))
+story.append(para(intro_paragraphs[3], "small"))
+
+for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykułem", "Akceptacja i poprawki"]:
+    story.extend([PageBreak(), para(key, "h1")])
+    if key == "Akceptacja i poprawki":
+        story.append(PhaseStrip(["Kontrole agentów", "Akceptacje ludzi", "Termin i publikacja"]))
+    story.extend(markdown_blocks(sections[key]))
 
 phase_keys = [k for k in sections if k.startswith("Faza ")]
 strips = [
-    ["Materiały produktu", "Potwierdzona wiedza", "Artykuł i posty"],
-    ["Przygotowanie", "Przegląd i poprawki", "Szkic w blogu"],
-    ["Dane o sklepie", "Zalecenie SEO", "Poprawka lub treść"],
+    ["Zlecenie i źródła", "Agenci i poprawki", "Zgoda właściciela"],
+    ["Excel lub formularz", "Serie i języki", "Akceptacje zespołu"],
+    ["Zatwierdzona wersja", "Termin i język", "Publikacja w CMS"],
 ]
 for key, labels in zip(phase_keys, strips):
     story.extend([PageBreak(), para(key, "h1"), PhaseStrip(labels)])
     story.extend(markdown_blocks(sections[key]))
 
-research_key = "Pytania do Magmari przed ustaleniem Fazy 3"
-story.extend([PageBreak(), para(research_key, "h1")])
-story.extend(markdown_blocks(sections[research_key]))
-
-story.extend([PageBreak(), para("Pakiety i decyzja o kolejnych krokach", "h1")])
-for key in ["Osobne pakiety do oferty", "Co sprawdzimy dzięki demonstratorowi", "Dalszy rozwój", "Następne kroki"]:
+story.extend([PageBreak(), para("Ustalenia i osobne pakiety", "h1")])
+for key in ["Ustalenia potrzebne do rozpoczęcia", "Pakiety do osobnej wyceny", "Następne kroki"]:
     story.append(para(key, "h2"))
     story.extend(markdown_blocks(sections[key]))
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 doc = SimpleDocTemplate(str(OUTPUT), pagesize=(595.28, 841.89), leftMargin=42, rightMargin=42,
-                        topMargin=68, bottomMargin=58, title="Magmari - treści i SEO w trzech fazach", author="Vintal")
+                        topMargin=68, bottomMargin=58, title="Kreator artykułów z agentami AI", author="Vintal")
 doc.build(story, onFirstPage=page_frame, onLaterPages=page_frame)
 print(OUTPUT)

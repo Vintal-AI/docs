@@ -8,17 +8,17 @@ permalink: /social-posts-manager/
 
 # Social Posts Manager
 
-Social Posts Manager wspiera pracę nad treściami marek: od kontekstu i pomysłu po przygotowanie materiału oraz proces publikacji. Dalszy rozwój może połączyć tę pracę z analizą stron i wykorzystaniem pytań klientów.
+Social Posts Manager wspiera pracę nad treściami marek: od kontekstu i pomysłu po przygotowanie materiału oraz proces publikacji. Planowane rozszerzenie obejmuje artykuły przygotowywane przez agentów AI i zatwierdzane przez zespół.
 
-## Analiza SEO i treści dla Magmari
+## Kreator artykułów z agentami AI
 
-Proponujemy trzy osobno wyceniane fazy: pokaz na jednym rzeczywistym produkcie, regularne tworzenie i przekazywanie treści, a następnie analizę SEO połączoną z planowaniem materiałów. Podstawą treści byłyby potwierdzone informacje o produktach, instrukcje i wiedza zespołu.
+Po zmianie zakresu 23 października 2026 plan obejmuje pojedyncze i seryjne zlecenia artykułów, źródła, kontrolę SEO treści, korekty, wersje językowe, akceptacje i integrację publikacji. Proponujemy osobno wyceniane fazy: podstawowy proces jednego artykułu, pracę zespołową i serie oraz połączenie z CMS.
 
-[Otwórz plan analizy SEO i tworzenia treści]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
+[Otwórz plan kreatora artykułów]({{ '/social-posts-manager/seo-i-tresci/' | relative_url }}){: .btn .btn-primary }
 
-**Status:** propozycja do omówienia. Szczegółowy zakres pilota zależy od dostępnych danych, obecnych narzędzi i potrzeb zespołu SEO.
+**Status:** kierunek do realizacji po doprecyzowaniu reguł i zakresu etapów. Audyt sklepu i wcześniejsze wyceny pozostają poza nowym planem.
 
 ## Następne kroki
 
-1. Zapoznać się z planem SEO i treści.
-2. Uzgodnić priorytety i zakres pilota z osobami odpowiedzialnymi za SEO oraz wiedzę produktową.
+1. Zapoznać się z planem kreatora i wybrać pierwsze zlecenie.
+2. Uzgodnić reguły SEO, osoby zatwierdzające i docelowy CMS.

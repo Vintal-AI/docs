@@ -1,116 +1,125 @@
 ---
 layout: default
-title: SEO i treści dla Magmari
+title: Kreator artykułów z agentami AI
 parent: Social Posts Manager
 nav_order: 1
 permalink: /social-posts-manager/seo-i-tresci/
 ---
 
-# Wiedza Magmari jako podstawa treści i rozwoju SEO
+# Kreator artykułów z agentami AI
 
-**Propozycja trzech osobno wycenianych faz. Aktualizacja: 22 października 2026.**
+**Kierunek po zmianie zakresu z 23 października 2026. Podział na fazy jest propozycją do wyceny.**
 
-Chcemy ułatwić zespołowi Magmari tworzenie przydatnych treści o produktach i wybieranie działań, które warto wykonać w sklepie. Zaczniemy od pokazu na rzeczywistych materiałach. Pozwoli on ocenić jakość odpowiedzi AI i zdecydować o dalszej inwestycji.
+Przygotowujemy artykuły dla wielu marek: od tematu i materiałów, przez pracę agentów AI i akceptację zespołu, do publikacji w odpowiedniej wersji językowej strony. Artykuły mogą tworzyć poradnik, encyklopedię lub słownik pojęć, z odsyłaczami między powiązanymi materiałami.
+
+Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Ten plan zastępuje wcześniejszy podział na fazy; wcześniejsze szacunki cen wymagają ponownego przeliczenia.
 
 [Pobierz opis w PDF]({{ '/assets/pdf/magmari-plan-etapow.pdf' | relative_url }}){: .btn .btn-primary }
 
-## Jak będzie działał system
+## Jak powstaje artykuł
 
-1. **Dodajemy produkt i materiały.** Wybieramy produkt, opis, instrukcję i pytania, które otrzymuje obsługa klienta. Możemy też podać temat lub słowa kluczowe.
-2. **AI porządkuje wiedzę.** Przygotowuje propozycje faktów i odpowiedzi z odsyłaczami do materiałów. Osoba z Magmari potwierdza ich poprawność.
-3. **Wybieramy potrzebną treść.** System proponuje temat, odbiorcę i plan materiału. W późniejszej fazie będzie korzystał również z analizy SEO.
-4. **AI przygotowuje szkice.** Na podstawie zatwierdzonej wiedzy powstaje artykuł i propozycje postów. Brakująca informacja trafia na listę pytań do uzupełnienia.
-5. **Człowiek zatwierdza materiał.** Zespół poprawia treść i decyduje o przekazaniu jej do publikacji. Zachowujemy informację o użytych źródłach i wersji tekstu.
+1. **Wypełniamy zlecenie.** Jedno w formularzu albo wiele w Excelu lub zbiorczym widoku aplikacji. Wybieramy markę, temat, frazy, źródła i języki.
+2. **Agenci przygotowują treść.** Porządkują materiały, proponują frazy pokrewne i plan, piszą szkic, sprawdzają jakość oraz reguły SEO i wykonują poprawki.
+3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
+4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
+5. **Publikujemy zgodnie z planem.** Zatwierdzony materiał trafia przez uzgodnione połączenie na stronę właściwej marki i języka. System zapisuje wynik publikacji.
 
-AI wykonuje konkretne zadania: porządkuje materiały, proponuje tematy, pisze szkice i wskazuje twierdzenia wymagające sprawdzenia. Ostateczne potwierdzenie faktów i publikacji należy do ludzi.
+Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię zmian oraz koszt AI. Zakres dostępny w kolejnych fazach opisujemy poniżej.
 
-## Faza 1 Pokaz na jednym rzeczywistym produkcie
+## Zlecenie i materiały źródłowe
 
-**Cel:** sprawdzić, czy z materiałów Magmari potrafimy przygotować użyteczny artykuł i treści promujące go w social mediach.
-
-Proponowany zakres to jeden produkt, język polski, maksymalnie trzy krótkie materiały źródłowe oraz do pięciu pytań i odpowiedzi. Na ich podstawie przygotujemy przegląd wiedzy, plan artykułu, jeden szkic artykułu i dwa szkice postów. Pokaz będzie korzystał z rzeczywistego generowania AI i zapisanego zestawu wejściowego. Publikowanie w sklepie pozostaje kolejnym etapem.
-
-### Co zobaczymy
-
-Wybieramy temat, na przykład „Jak stosować wybrany produkt i jakich błędów unikać?”. Na ekranie przechodzimy od materiałów do potwierdzonych informacji, następnie do planu i gotowego szkicu. Możemy sprawdzić, z którego materiału pochodzi użyta informacja, oraz zobaczyć, jak system zgłasza brak odpowiedzi.
-
-**Rezultat:** działający demonstrator, przykładowe materiały, informacja o koszcie generowania i lista poprawek przed regularnym użyciem.
-
-**Odbiór:** wskazana osoba z Magmari ocenia poprawność informacji, przydatność artykułu i zakres niezbędnych poprawek. Powtarzamy pokaz na zapisanych danych oraz sprawdzamy przypadek brakującej informacji. Uzgodniony limit kosztu AI obowiązuje także podczas prób.
-
-**Potrzebujemy:** wyboru produktu, materiałów do wykorzystania, osoby potwierdzającej wiedzę i dostępu do środowiska demonstracyjnego. Narzędzia specjalisty SEO mogą być ustalane równolegle.
-
-## Faza 2 Regularne tworzenie i przekazywanie treści
-
-**Cel:** rozwinąć sprawdzony pokaz w powtarzalny proces pracy w obecnej aplikacji.
-
-Zespół będzie dodawał wiedzę przy marce i produktach, przeglądał propozycje AI, wybierał temat oraz zamawiał szkic. System zachowa źródła, historię wersji, uwagi i stan zatwierdzenia. Z zaakceptowanego artykułu będzie można przygotować powiązane posty do obecnego procesu społecznościowego.
-
-Podstawą osobnej wyceny będzie jedna marka, język polski, jeden szablon artykułu i dwa uzgodnione formaty tekstów do social mediów. Dodamy przekazanie szkicu do jednego bloga, jeżeli sprawdzone możliwości sklepu pozwolą na integrację. Gdy potrzebny będzie własny moduł po stronie sklepu, wycenimy go osobno. Liczbę generowanych materiałów określa budżet i plan redakcyjny.
-
-**Rezultat:** narzędzie do regularnej pracy, edycja i zatwierdzanie treści oraz ustalony sposób przekazywania materiałów do sklepu.
-
-**Odbiór:** użytkownik przechodzi cały proces od materiału źródłowego do uzgodnionego przekazania do sklepu: szkicu w jego panelu albo gotowego eksportu. Sposób przekazania ustalamy przed wyceną. Poprawiona wersja wymaga ponownego zatwierdzenia, ponowienie wysyłki nie tworzy duplikatu, a posty zachowują powiązanie z artykułem. Publikacja jest osobno potwierdzaną czynnością.
-
-**Potrzebujemy:** wyników Fazy 1, uzgodnienia pracy z Weroniką lub inną wskazaną osobą oraz sprawdzenia silnika sklepu i dostępnego połączenia.
-
-## Faza 3 Analiza SEO połączona z planowaniem treści
-
-**Status: to faza z największą liczbą niewiadomych.** Przed jej wyceną i realizacją potrzebujemy wspólnie określić problem, oczekiwany efekt i warunek sukcesu. Poniższy zakres jest propozycją do sprawdzenia w rozmowie z Magmari.
-
-**Proponowany cel:** ułatwić wybór poprawek i treści na podstawie danych o sklepie. Ustalimy, czy najważniejsza jest oszczędność pracy zespołu, lepszy plan działań, ruch, sprzedaż czy widoczność w odpowiedziach AI.
-
-System mógłby sam uruchamiać analizę narzędziem takim jak Screaming Frog albo wykonywać własne kontrole. Ręczny eksport byłby opcją pomocniczą. Wyniki i dostępne dane Google Search Console połączymy z wiedzą Magmari. Zalecenie wskaże adres lub temat, obserwację, źródło, datę i dalszą czynność. Automatyzację i udział specjalisty uzgodnimy po rozpoznaniu potrzeby.
-
-| Co wskazują dane | Możliwe działanie |
+| Co podajemy | Do czego służy |
 | --- | --- |
-| Błąd techniczny utrudnia korzystanie ze strony | Zadanie dla osoby utrzymującej sklep |
-| Istniejąca strona nie odpowiada na ważne pytanie | Uzupełnienie produktu, kategorii lub artykułu |
-| Potwierdzona potrzeba nie ma odpowiedniego materiału | Brief nowego poradnika, FAQ lub porównania |
-| Materiał jest gotowy do promocji | Powiązane posty społecznościowe |
+| Marka, temat i główna fraza | Oddzielenie klientów i określenie zawartości artykułu |
+| Wymagania i języki | Odbiorca, styl, zakres i wersje językowe |
+| Treść źródłowa i opcjonalne linki | Podstawa informacji, przykładów i odsyłaczy |
+| Planowany termin | Data, godzina i strefa czasowa publikacji |
+| Obraz, opis alternatywny i ścieżka akceptacji | Opcjonalna ilustracja i wymagane osoby zatwierdzające |
 
-Niska widoczność wymaga analizy przyczyny; nowy tekst jest jedną z możliwych odpowiedzi. Wielkość zainteresowania tematem wymaga danych o wyszukiwaniu.
+**Preferujemy wklejoną treść i materiały dostępne w aplikacji.** Link jest uzupełnieniem: system sprawdzi możliwość odczytu i zapisze pobraną treść. Niedostępna strona lub logowanie oznaczają prośbę o wklejenie materiału. Sam adres nie jest przeczytanym źródłem.
 
-Robocza granica pilota to jedna domena, do 50 adresów, jeden sposób analizy i jedno źródło danych Search Console. Dobór silnika, zakres automatycznego uruchamiania i dane konkurencji wymagają ustaleń przed wyceną.
+Osobno sprawdzamy linki umieszczane w artykule, także między hasłami. Działający adres nie potwierdza poprawności informacji. Wyszukiwanie nowych źródeł w Google pozostaje opcją do uzgodnienia.
 
-**Możliwy rezultat:** uzasadnione zalecenia, briefy przekazane do tworzenia treści i historia ponownych sprawdzeń. Ostateczny rezultat dobierzemy do wskazanego problemu.
+## Agenci pracujący nad artykułem
 
-**Propozycja odbioru narzędzia:** sprawdzenie trzech zaleceń w źródłach, przekazanie jednego do briefu i ponowne sprawdzenie poprawionej strony. Kryteria dopasujemy do celu pilota. Efekty biznesowe oceniamy osobno, według uzgodnionego pomiaru i po wdrożeniu działań.
+| Agent | Widoczny rezultat |
+| --- | --- |
+| Przygotowania źródeł i planu | Materiały, braki, propozycje fraz pokrewnych i plan |
+| Piszący | Szkic oparty na zleceniu, kontekście marki i źródłach |
+| Recenzujący | Uwagi o zgodności ze źródłami, kompletności, czytelności i linkach |
+| Kontroli SEO | Raport uzgodnionych zasad i wskazanie poprawek |
+| Korekty | Nowa wersja uwzględniająca uwagi agentów i ludzi |
+| Tłumaczenia i korekty językowej | Wersja docelowa, sprawdzenie języka, terminologii i znaczenia |
+| Ilustracji i opisu alternatywnego | Opcjonalny obraz i opis zgodny z jego zawartością |
 
-## Pytania do Magmari przed ustaleniem Fazy 3
+Role tworzą kontrolowaną sekwencję z limitem poprawek i kosztu. Trudny przypadek trafia do człowieka. Frazy pokrewne proponowane przez AI nie oznaczają zmierzonej popularności wyszukiwania.
 
-Na te pytania potrzebujemy odpowiedzi Mateusza i osób pracujących nad SEO oraz marketingiem. Pozwolą dopasować rozwiązanie do rzeczywistej potrzeby i przygotować zakres oraz wycenę. Wiemy już, że Krzysztof korzysta ze Screaming Frog SEO Spider; samo wskazanie narzędzia nie określa oczekiwanego efektu.
+Z Krzysztofem ustalimy strukturę nagłówków, długość, użycie fraz, akapity, metadane i linki. Kontrole liczbowe wykona kod, agent oceni treść i zaproponuje poprawki. Liczba powtórzeń frazy jest regułą redakcyjną; unikamy nienaturalnego upychania słów, opisanego w [zasadach Google](https://developers.google.com/search/docs/essentials/spam-policies#keyword-stuffing).
 
-1. **Jaki problem jest dziś najważniejszy?** Mało wartościowych wejść, niska sprzedaż z ruchu, brak widoczności konkretnych produktów, czasochłonne analizy czy brak planu treści? Prosimy wybrać główny problem i podać przykład.
-2. **Kto będzie korzystał z wyniku i co ma dzięki niemu zrobić?** Czy potrzebny jest raport dla właściciela, lista zadań dla Krzysztofa lub programisty, czy gotowe briefy dla marketingu? Kto wdroży zalecenia i kto zatwierdzi wynik pilota?
-3. **Jak wygląda obecna praca i gdzie się zatrzymuje?** Co dzieje się po skanowaniu w Screaming Frogu? Które czynności są powtarzalne, zajmują najwięcej czasu albo pozostają niewykonane? Co system ma robić samodzielnie, a co wymaga oceny człowieka?
-4. **Jaki konkretny efekt będzie sukcesem pilota?** Przykładowo: krótsze przygotowanie analizy, użyteczne priorytety, wdrożone poprawki lub briefy wykorzystane przez redakcję. Jeśli celem jest ruch, sprzedaż lub obecność w odpowiedziach AI, ustalmy wybrane strony, produkty albo pytania i oczekiwaną zmianę.
-5. **Jak sprawdzimy osiągnięcie celu?** Jakie mamy dane i stan początkowy? Ustalmy wskaźnik, wartość docelową, okres pomiaru i osobę oceniającą. Dla widoczności AI potrzebny jest uzgodniony zestaw pytań i usług; dla ruchu lub sprzedaży dostęp do odpowiednich danych.
+## Akceptacja i poprawki
 
-**Wynik tego rozpoznania:** wspólnie uzgodniony problem, główny użytkownik, rezultat pilota, zakres automatyzacji oraz warunek sukcesu z pomiarem i osobą odpowiedzialną. Dopiero na tej podstawie zamkniemy zakres i cenę Fazy 3. Fazy 1 i 2 można przygotowywać niezależnie od tych ustaleń.
+Po kontrolach AI artykuł trafia do właściciela. Schemat przewiduje następnie weryfikację SEO, copywritera i marketing managera. Wymagane poziomy oraz możliwość pominięcia wybranych etapów ustalamy dla marki. Agenci przygotowują materiał; akceptacje są decyzjami wskazanych osób.
 
-## Osobne pakiety do oferty
+Odrzucenie zawiera uwagi i kieruje materiał do poprawy oraz ponownej weryfikacji właściciela. Zmieniona treść ponownie przechodzi wymagane kontrole i akceptacje. Zgoda dotyczy konkretnej wersji tekstu, metadanych, obrazu i opisu alternatywnego.
 
-| Pakiet | Za jaki rezultat płacimy | Co ustalamy przed wyceną |
+Każda wersja językowa ma osobny stan i miejsce publikacji: PL trafia na PL, ENG na ENG. Tłumaczenie wymaga sprawdzenia; akceptacja oryginału nie zatwierdza automatycznie tłumaczenia. Zależności między językami uzgodnimy przed realizacją.
+
+Termin w kalendarzu nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
+
+## Faza 1 Pojedynczy artykuł i podstawowi agenci
+
+**Cel:** sprawdzić proces redakcyjny na rzeczywistym zleceniu.
+
+Przygotujemy formularz przy marce, obsługę treści źródłowych i sprawdzania linków, agentów planowania, pisania, recenzji, SEO i korekty. Dojdą edycja, wersje oraz akceptacja właściciela z pętlą uwag. Pilot obejmie jedną markę i jeden język, z zachowaniem oddzielenia danych wielu klientów.
+
+**Rezultat:** działający proces od zlecenia do zatwierdzonego artykułu i raportu kontroli. Produkt może dostarczać kontekstu, ale nie jest obowiązkowym typem artykułu. Import seryjny, tłumaczenia i publikacja są w kolejnych fazach.
+
+**Odbiór:** artykuł powstaje z zapisanych źródeł, brak informacji jest zgłaszany, niedostępny link wymaga uzupełnienia, a uwagi prowadzą do nowej wersji i ponownej akceptacji. Pokazujemy rzeczywisty wynik i koszt AI. Przed wyceną ustalamy długość materiałów, zasady SEO, limit prób i budżet.
+
+## Faza 2 Serie artykułów i wersje językowe
+
+**Cel:** regularna praca zespołu nad wieloma artykułami.
+
+Dodamy templatkę XLSX oraz zbiorczy widok aplikacji z tymi samymi polami. Import pokaże podgląd, błędy wierszy, szacowany koszt i liczbę zleceń przed uruchomieniem agentów. Każdy artykuł ma osobny wynik i możliwość poprawienia błędu.
+
+Rozwiniemy ścieżki akceptacji SEO, copywritera i marketing managera, tłumaczenie oraz korektę językową. Dodamy przesłany lub wygenerowany obraz i opis alternatywny. Materiały i reguły są przypisane do właściwej marki.
+
+**Rezultat:** kolejka artykułów, praca zbiorcza, wersje językowe i pełna ścieżka redakcyjna.
+
+**Odbiór:** formularz i Excel tworzą równoważne zlecenia; wadliwy wiersz jest opisany; ponowny import nie powiela zlecenia; marka nie ujawnia danych innej marki. Tłumaczenie i obraz przechodzą wymagane sprawdzenia, a zmiana materiału wymaga ponownego przeglądu.
+
+## Faza 3 Integracja i publikacja w terminie
+
+**Cel:** przekazywanie zatwierdzonych artykułów do właściwej strony i wersji językowej.
+
+Po sprawdzeniu docelowego CMS przygotujemy jedno uzgodnione połączenie: treść, metadane, obraz, opis alternatywny i linki, w zakresie obsługiwanym przez stronę. Zaplanujemy publikację, pokażemy błędy i zapiszemy docelowy adres. Ponowienie nie powinno tworzyć drugiego wpisu.
+
+**Rezultat:** zatwierdzona wersja trafia zgodnie z terminem do odpowiedniej sekcji językowej. Dla encyklopedii lub słownika ustalimy pola hasła, indeks i linkowanie. Budowa nowej strony lub własnej wtyczki CMS wymaga osobnej wyceny.
+
+**Odbiór:** test na uzgodnionym środowisku potwierdza język, treść i termin; brak akceptacji blokuje wysyłkę; ponowienie nie tworzy duplikatu. Publikację potwierdzamy po stronie docelowej.
+
+**Główna zależność:** możliwości CMS, dostęp i mapowanie języków. Każda kolejna integracja ma osobny zakres.
+
+## Ustalenia potrzebne do rozpoczęcia
+
+1. **Zlecenie i limity:** marka, temat, język, materiały, długość artykułu, wolumen serii, limit kosztu i poprawek.
+2. **SEO:** konkretne wartości reguł, dobry przykład, błędy blokujące i ostrzeżenia; frazy pokrewne z AI czy z danych zewnętrznych?
+3. **Akceptacje:** kim jest właściciel, które poziomy są obowiązkowe, kto może je pominąć i kto ocenia tłumaczenia?
+4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
+5. **Publikacja i sukces:** CMS, struktura słownika, języki, strefa czasowa i zachowanie po terminie. Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
+
+## Pakiety do osobnej wyceny
+
+| Pakiet | Rezultat | Zależność |
 | --- | --- | --- |
-| Faza 1 Demo | Sprawdzenie procesu na jednym produkcie i rzeczywistym AI | Materiały, temat, środowisko, osoba oceniająca i limit prób |
-| Faza 2 Produkcja treści | Powtarzalny proces redakcyjny i przekazywanie szkiców | Funkcje pracy zespołu, szablony i możliwości jednego bloga |
-| Faza 3 Asystent SEO | Rezultat pilota dopasowany do ustalonego problemu | Odpowiedzi produktowe, warunek sukcesu, silnik analizy, dane i automatyzacja |
+| Faza 1 | Artykuł z agentami, kontrolą i akceptacją | Zlecenie i zasady SEO |
+| Faza 2 | Excel, serie, języki, obrazy i akceptacje zespołu | Wolumen, języki, role i budżet AI |
+| Faza 3 | Jeden CMS i publikacja w terminie | Dostęp, pola i obsługa języków |
 
-Każda faza ma osobną wycenę i odbiór. Decyzja o kontynuacji następuje po ocenie poprzedniego etapu. Licencje, dane zewnętrzne, utrzymanie i zużycie AI są wykazywane oddzielnie. Kwoty ustalimy po doprecyzowaniu zakresu; propozycja nie jest jeszcze ofertą cenową.
-
-## Co sprawdzimy dzięki demonstratorowi
-
-Demo pokaże jakość przygotowania treści z wiedzy Magmari, pracę potrzebną do ich poprawienia i koszt generowania. Nie potwierdzi jeszcze wzrostu widoczności w Google, rekomendacji przez usługi AI ani wzrostu sprzedaży.
-
-Dalszy pomiar obejmie wyniki wybranych stron, przejścia do produktów i zakupy, jeśli są rejestrowane. Przy porównaniu uwzględnimy daty publikacji, sezonowość i pozostałe działania marketingowe.
-
-## Dalszy rozwój
-
-Po sprawdzeniu podstaw możemy rozszerzyć import pytań klientów, obsługę kolejnych języków, analizę większej liczby stron i eksport danych produktowych do wybranych usług AI. Możliwość zakupów przez agentów wymaga osobnej oceny dostępności i integracji ze sklepem.
+Każda faza ma osobny odbiór. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI. Posty społecznościowe pozostają możliwym rozszerzeniem.
 
 ## Następne kroki
 
-1. Potwierdzić z zespołem, czy podział na trzy fazy odpowiada potrzebie i sposobowi pracy.
-2. Wybrać rzeczywisty produkt oraz osobę oceniającą pokaz; uzgodnić z Weroniką oczekiwany przebieg.
-3. Odpowiedzieć na pytania produktowe Fazy 3 i uzgodnić jej warunek sukcesu przed zamknięciem zakresu i wyceny.
+1. Wybrać rzeczywiste zlecenie i zatwierdzić reguły oraz odbiór Fazy 1.
+2. Uzgodnić pola templatki, języki i osoby zatwierdzające dla Fazy 2.
+3. Wskazać CMS oraz ustalić integrację przed wyceną Fazy 3.

@@ -19,10 +19,10 @@ Dodaj plik w katalogu projektu, z polami `layout`, `title`, `parent` i `permalin
 
 Workflow `.github/workflows/pages.yml` instaluje zależności z `Gemfile.lock`, buduje stronę i publikuje ją na GitHub Pages. Źródło Pages w ustawieniach repozytorium musi być ustawione na GitHub Actions.
 
-Przed budowaniem strony workflow generuje PDF planu Magmari z tego samego pliku Markdown. Skrypt `scripts/build_pdf.py` korzysta z ReportLab i czcionek DejaVu Sans na Linuxie lub Arial na macOS; inne ścieżki TTF można przekazać przez `DOCS_FONT_REGULAR` i `DOCS_FONT_BOLD`. Zależność jest przypięta w `scripts/requirements-pdf.txt`. PDF w `assets/pdf/` jest wynikiem generowania, a treść edytujemy w pliku planu. Zmiana nazw głównych sekcji wymaga aktualizacji mapowania w skrypcie.
+Przed budowaniem strony workflow generuje PDF planu kreatora artykułów z tego samego pliku Markdown. Skrypt `scripts/build_pdf.py` korzysta z ReportLab i czcionek DejaVu Sans na Linuxie lub Arial na macOS; inne ścieżki TTF można przekazać przez `DOCS_FONT_REGULAR` i `DOCS_FONT_BOLD`. Zależność jest przypięta w `scripts/requirements-pdf.txt`. PDF w `assets/pdf/` jest wynikiem generowania, a treść edytujemy w pliku planu. Zmiana nazw głównych sekcji wymaga aktualizacji mapowania w skrypcie. Dotychczasowe adresy strony i PDF pozostają stałe po zmianie zakresu z 23.10.2026.
 
 Weryfikacja lokalna może korzystać z kontenera Ruby 3.3: instalacja zależności poleceniem `bundle install`, następnie `bundle exec jekyll build --trace`. Podgląd to `bundle exec jekyll serve --host 0.0.0.0`; skonfigurowany prefiks adresu wynosi `/docs`. Instalowanie Ruby na komputerze nie jest wymagane.
 
 ## Następne kroki
 
-Uwagi do planu SEO i wybór pilota należy uzgodnić z zespołem przed oznaczeniem zakresu jako zatwierdzonego.
+Reguły SEO artykułu, akceptacje i zakres etapów należy uzgodnić z zespołem przed oznaczeniem szczegółów jako zatwierdzonych.
