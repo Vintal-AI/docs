@@ -10,7 +10,7 @@ permalink: /social-posts-manager/seo-i-tresci/
 
 **Jedna faza wdrożenia osobnej aplikacji. Aktualizacja zakresu: 23 października 2026.**
 
-Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz opcjonalną integrację publikacji we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
+Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz opcjonalną publikację do sklepu Magmari we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
 
 Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Ten plan zastępuje wcześniejszy podział na fazy; wcześniejsze szacunki cen wymagają ponownego przeliczenia.
 
@@ -22,7 +22,7 @@ Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoc
 2. **Agenci tworzą i sprawdzają treść.** Porządkują źródła i plan, piszą szkic, robią review, kontrolują SEO i poprawiają materiał przed oceną człowieka.
 3. **Przygotowujemy języki i obraz.** Tłumaczenie przechodzi korektę. Zdjęcie oraz opis alternatywny można dodać lub zlecić ich przygotowanie.
 4. **Zespół zatwierdza wersję.** Właściciel artykułu i wymagani recenzenci zgłaszają uwagi albo akceptują materiał. Poprawki wracają do ponownego przeglądu.
-5. **Pobieramy lub publikujemy artykuł.** Gotowy materiał pobieramy jako Markdown, HTML lub PDF. Jeśli uzgodnimy integrację, zatwierdzona wersja trafi w terminie na stronę właściwej marki i języka.
+5. **Pobieramy lub publikujemy artykuł.** Gotowy materiał pobieramy jako Markdown, HTML lub PDF. Opcjonalna integracja wyśle zatwierdzoną wersję do sklepu Magmari. Dla pozostałych marek w tej fazie udostępniamy pliki do pobrania.
 
 Każdy agent ma zadanie i widoczny wynik. Pokazujemy postęp, uwagi, historię zmian oraz koszt AI. Całość stanowi jeden zakres wdrożenia; poniżej opisujemy jego elementy.
 
@@ -79,7 +79,7 @@ Odrzucenie zawiera uwagi i kieruje materiał do poprawy oraz ponownej weryfikacj
 
 Każda wersja językowa ma osobny stan i miejsce publikacji: PL trafia na PL, ENG na ENG. Tłumaczenie wymaga sprawdzenia; akceptacja oryginału nie zatwierdza automatycznie tłumaczenia. Zależności między językami uzgodnimy przed realizacją.
 
-Przy uzgodnionej integracji publikacji termin nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
+Przy uzgodnionej publikacji do Magmari termin nie zastępuje akceptacji. Materiał bez wymaganych zgód pozostaje wstrzymany. Ustalimy zachowanie po terminie: nowa data czy publikacja po zatwierdzeniu. System odróżnia szkic w panelu strony od opublikowanego artykułu.
 
 ## Formaty artykułu i pobieranie
 
@@ -95,7 +95,7 @@ Przy MD i HTML udostępnimy też paczkę ZIP z wybranym plikiem, obrazami i osob
 
 Eksport wskazuje konkretną wersję i język; szkic oznaczamy jako roboczy. Zmiana formatu nie zmienia treści ani jej akceptacji. Wersja po poprawkach ma własny eksport.
 
-WordPress jest przykładowym celem dla HTML lub uzgodnionej integracji. Dopasujemy pola i sposób wstawiania do konkretnej strony. Różne motywy, edytory i wtyczki mogą wymagać innego mapowania; dodatkowy CMS lub szablon ustalamy w zakresie. Pobranie pliku nie oznacza opublikowania artykułu.
+HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zależy od strony docelowej. W tej fazie automatyczna wysyłka przez API może objąć wyłącznie sklep Magmari. Integracje z pozostałymi systemami odkładamy do kolejnej, osobno uzgadnianej fazy. Pobranie pliku nie oznacza publikacji.
 
 ## Jedna faza Pełny kreator artykułów
 
@@ -105,11 +105,11 @@ WordPress jest przykładowym celem dla HTML lub uzgodnionej integracji. Dopasuje
 2. **Input pojedynczy i zbiorczy.** Formularz, templatka XLSX i widok serii: temat, produkt, informacje oraz powiązane zdjęcia i grafiki. Import ma podgląd, błędy wierszy i szacunek kosztu przed generacją.
 3. **Tworzenie i kontrola treści.** Źródła, walidacja linków, agenci planowania, pisania, recenzji, SEO i korekty, z historią wyników oraz wersji.
 4. **Praca redakcyjna.** Tłumaczenia i korekta językowa, opcjonalne obrazy i alt oraz wymagane akceptacje właściciela, SEO, copywritera i marketing managera. Poprawki wracają do przeglądu.
-5. **Eksport i opcja publikacji.** Artykuł pobieramy jako MD, HTML lub PDF; przy MD/HTML dostępna jest paczka z obrazami i metadanymi. Jeśli zamówimy integrację, dodamy jeden CMS, mapowanie języków, harmonogram, obsługę błędów i potwierdzenie publikacji.
+5. **Eksport i opcja publikacji.** Artykuł pobieramy jako MD, HTML lub PDF; przy MD/HTML dostępna jest paczka z obrazami i metadanymi. Opcjonalnie dodamy publikację do sklepu Magmari: języki, harmonogram, obsługę błędów i potwierdzenie wyniku. API innych systemów pozostają na później.
 
 **Rezultat:** działający kreator dla wielu marek, obsługujący pojedyncze artykuły i serie. Produkt może być kontekstem, ale nie jest obowiązkowym typem artykułu. Liczbę języków i wielkość serii uzgadniamy w zakresie.
 
-**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w CMS.
+**Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w sklepie.
 
 ## Ustalenia potrzebne do rozpoczęcia
 
@@ -117,7 +117,7 @@ WordPress jest przykładowym celem dla HTML lub uzgodnionej integracji. Dopasuje
 2. **SEO:** konkretne wartości reguł, dobry przykład, błędy blokujące i ostrzeżenia; frazy pokrewne z AI czy z danych zewnętrznych?
 3. **Akceptacje:** kim jest właściciel, które poziomy są obowiązkowe, kto może je pominąć i kto ocenia tłumaczenia?
 4. **Źródła i obrazy:** obsługiwane materiały, niedostępne linki oraz potrzeba wyszukiwania i generowania ilustracji.
-5. **Publikacja i sukces:** CMS, struktura słownika, języki, strefa czasowa i zachowanie po terminie. Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
+5. **Publikacja i sukces:** czy włączamy integrację Magmari, jakie ma możliwości sklep, języki i terminy? Jaki wynik próby i nakład poprawek oznaczają przydatny proces?
 
 ## Zakres i wycena jednego wdrożenia
 
@@ -126,12 +126,16 @@ Przygotujemy jedną ofertę i wspólny odbiór całego uzgodnionego procesu. Pod
 | Ustalenie | Co obejmuje |
 | --- | --- |
 | Podstawowy zakres aplikacji | Fundament, formularz i XLSX, źródła, agenci, serie, języki, obrazy, akceptacje i eksport MD/HTML/PDF z paczką materiałów |
-| Opcjonalna integracja publikacji | Jeden wskazany CMS, jego pola, języki i harmonogram; decyzję o włączeniu podejmujemy przed zamknięciem oferty |
+| Opcjonalna publikacja do Magmari | Wyłącznie sklep Magmari, jego pola, języki i harmonogram; możliwości połączenia i włączenie opcji ustalamy przed wyceną |
 
 Wycena uwzględni limity serii, języków, długości, korekt i budżetu AI. Dla encyklopedii lub słownika ustalimy pola haseł, indeks i linkowanie. Własna wtyczka CMS lub budowa strony wymagają jawnego uzgodnienia zakresu. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI.
+
+## Późniejsza faza Integracje API innych systemów
+
+Automatyczny upload lub publikacja do WordPressa, innych sklepów i zewnętrznych CMS pozostają poza bieżącym wdrożeniem. Po sprawdzeniu kreatora można osobno uzgodnić kolejną fazę: wybrać systemy, sprawdzić API i uprawnienia oraz wycenić adaptery i ich utrzymanie. Obsługa wielu marek i eksporty MD/HTML/PDF są dostępne w obecnym zakresie, bez tych integracji.
 
 ## Następne kroki
 
 1. Uzgodnić zakres jednej oferty, limity, reguły SEO i scenariusz odbioru na rzeczywistych materiałach.
 2. Potwierdzić języki, obrazy, pola XLSX i osoby zatwierdzające.
-3. Zdecydować o integracji publikacji i wskazać CMS; przygotować osobny projekt aplikacji.
+3. Zdecydować o opcji publikacji do Magmari i sprawdzić połączenie ze sklepem; pozostałe API zostawić na później.

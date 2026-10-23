@@ -182,10 +182,14 @@ for key in ["Zlecenie i materiały źródłowe", "Agenci pracujący nad artykuł
     if key == "Akceptacja i poprawki":
         story.append(PhaseStrip(["Kontrole agentów", "Akceptacje ludzi", "Termin i publikacja"]))
     story.extend(markdown_blocks(sections[key]))
+    if key == "Formaty artykułu i pobieranie":
+        later_key = "Późniejsza faza Integracje API innych systemów"
+        story.append(para(later_key, "h2"))
+        story.extend(markdown_blocks(sections[later_key]))
 
 scope_key = "Jedna faza Pełny kreator artykułów"
 story.extend([PageBreak(), para(scope_key, "h1"),
-              PhaseStrip(["Input i materiały", "Agenci i akceptacje", "Artykuł i opcja CMS"])])
+              PhaseStrip(["Input i materiały", "Agenci i akceptacje", "Eksport / Magmari"])])
 story.extend(markdown_blocks(sections[scope_key]))
 
 story.extend([PageBreak(), para("Ustalenia i wycena wdrożenia", "h1")])
