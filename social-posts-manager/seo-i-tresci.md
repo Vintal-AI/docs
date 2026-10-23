@@ -12,7 +12,7 @@ permalink: /social-posts-manager/seo-i-tresci/
 
 Tworzymy **osobną aplikację do artykułów**, z własnym panelem, dostępem użytkowników i danymi wielu marek. To niezależny projekt od Social Posts Managera. Proces obejmuje temat i źródła, agentów AI, akceptację oraz opcjonalną publikację do sklepu Magmari we właściwym języku. Treści mogą tworzyć poradnik, encyklopedię lub słownik z powiązanymi hasłami.
 
-Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Ten plan zastępuje wcześniejszy podział na fazy; wcześniejsze szacunki cen wymagają ponownego przeliczenia.
+Kontrola SEO dotyczy tworzonego artykułu. Audyt sklepu, crawler i analiza widoczności pozostają poza zakresem. Propozycja obejmuje jedno wdrożenie; możliwe rozszerzenia opisujemy osobno w propozycjach rozwoju.
 
 [Pobierz opis w PDF]({{ '/assets/pdf/magmari-plan-etapow.pdf' | relative_url }}){: .btn .btn-primary }
 
@@ -97,7 +97,7 @@ Eksport wskazuje konkretną wersję i język; szkic oznaczamy jako roboczy. Zmia
 
 HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zależy od strony docelowej. W tej fazie automatyczna wysyłka przez API może objąć wyłącznie sklep Magmari. Integracje z pozostałymi systemami odkładamy do kolejnej, osobno uzgadnianej fazy. Pobranie pliku nie oznacza publikacji.
 
-## Jedna faza Pełny kreator artykułów
+## Jedno wdrożenie kreatora artykułów
 
 **Cel:** dostarczyć osobną aplikację obsługującą cały uzgodniony proces: input, tworzenie treści, akceptację i ewentualną publikację. Poniższe elementy są częściami jednego wdrożenia.
 
@@ -111,7 +111,7 @@ HTML można ręcznie przenieść np. do WordPressa lub innego CMS; wygląd zale�
 
 **Odbiór:** przechodzimy od formularza i serii XLSX do zatwierdzonych materiałów na wdrożonej wersji, z rzeczywistym AI i kosztem. Sprawdzamy źródła, błędy, ponowny import, języki, akceptacje i izolację marek. Ten sam artykuł pobieramy w MD, HTML i PDF, z właściwymi obrazami i linkami. Przy zamówionej integracji Magmari potwierdzamy język, termin, blokadę bez zgód i brak duplikatu w sklepie.
 
-## Ustalenia potrzebne do rozpoczęcia
+## Założenia do uzgodnienia
 
 1. **Zlecenie i limity:** marka, temat, język, materiały, długość artykułu, wolumen serii, limit kosztu i poprawek.
 2. **SEO:** konkretne wartości reguł, dobry przykład, błędy blokujące i ostrzeżenia; frazy pokrewne z AI czy z danych zewnętrznych?
@@ -130,12 +130,15 @@ Przygotujemy jedną ofertę i wspólny odbiór całego uzgodnionego procesu. Pod
 
 Wycena uwzględni limity serii, języków, długości, korekt i budżetu AI. Dla encyklopedii lub słownika ustalimy pola haseł, indeks i linkowanie. Własna wtyczka CMS lub budowa strony wymagają jawnego uzgodnienia zakresu. Utrzymanie, usługi zewnętrzne i zużycie AI rozliczamy oddzielnie. Kontrola artykułu nie jest obietnicą pozycji w Google ani rekomendacji przez usługi AI.
 
-## Późniejsza faza Integracje API innych systemów
+## Propozycje rozwoju
 
-Automatyczny upload lub publikacja do WordPressa, innych sklepów i zewnętrznych CMS pozostają poza bieżącym wdrożeniem. Po sprawdzeniu kreatora można osobno uzgodnić kolejną fazę: wybrać systemy, sprawdzić API i uprawnienia oraz wycenić adaptery i ich utrzymanie. Obsługa wielu marek i eksporty MD/HTML/PDF są dostępne w obecnym zakresie, bez tych integracji.
+Po wdrożeniu kreatora można rozszerzać go o kolejne funkcje, zależnie od potrzeb zespołu i wyników pracy z artykułami. Poniższe propozycje pozostają poza obecną wyceną i odbiorem; ich zakres oraz kolejność uzgodnimy osobno.
 
-## Następne kroki
+| Kierunek | Możliwa wartość dla zespołu |
+| --- | --- |
+| Agent decyzyjny korekty językowej | Ocenia wynik tłumaczenia i recenzji, wskazuje, czy potrzebna jest korekta, ponowne tłumaczenie czy ocena człowieka. Uzasadnia zalecenie i kieruje materiał do właściwego kroku |
+| Integracje API z kolejnymi systemami | Automatyczny upload lub publikacja do innych sklepów, WordPressa i CMS, z obsługą obrazów, języków i wyników wysyłki. Obecna opcja Magmari pozostaje jedynym wyjątkiem w bieżącym zakresie |
+| Planner serii postów | Zamienia artykuł, produkt lub temat w propozycję powiązanej serii postów: kolejność, formaty, główne przekazy i sugerowane terminy |
+| Planner kampanii postów | Pomaga zaplanować komunikację wokół celu, odbiorców i okresu kampanii, łącząc artykuły i propozycje postów w spójny plan |
 
-1. Uzgodnić zakres jednej oferty, limity, reguły SEO i scenariusz odbioru na rzeczywistych materiałach.
-2. Potwierdzić języki, obrazy, pola XLSX i osoby zatwierdzające.
-3. Zdecydować o opcji publikacji do Magmari i sprawdzić połączenie ze sklepem; pozostałe API zostawić na później.
+Podstawowa korekta językowa jest częścią kreatora; agent decyzyjny byłby dodatkową warstwą doboru dalszej pracy. Rekomendacje agentów i plany komunikacji podlegają ocenie zespołu. Planowanie postów nie oznacza ich automatycznej produkcji ani publikacji. Dla każdej integracji i funkcji planowania ustalimy osobny zakres, koszty oraz kryteria odbioru.

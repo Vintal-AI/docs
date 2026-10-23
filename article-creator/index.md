@@ -18,6 +18,8 @@ Projekt obejmuje jedną fazę wdrożenia: setup nowego repozytorium i środowisk
 
 **Status:** osobna aplikacja zgodnie z wymaganiem przekazanym 23 października 2026. Jedna oferta i wspólny odbiór; reguły SEO, limity, akceptacje i opcja publikacji do Magmari wymagają doprecyzowania.
 
-## Następne kroki
+## Propozycje rozwoju
 
-Wybrać pierwsze zlecenie, ustalić reguły i przygotować nowy projekt aplikacji.
+Osobno można rozważyć agenta decyzyjnego korekty językowej, kolejne integracje API oraz planery serii i kampanii postów. Są to rozszerzenia poza obecną ofertą.
+
+[Zobacz propozycje rozwoju]({{ '/social-posts-manager/seo-i-tresci/#propozycje-rozwoju' | relative_url }})
