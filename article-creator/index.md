@@ -10,6 +10,14 @@ permalink: /article-creator/
 
 Osobna aplikacja do przygotowywania artykułów z agentami AI, obsługująca wiele marek, akceptacje zespołu, języki i eksporty oraz opcjonalną publikację do sklepu Magmari. Projekt ma własny interfejs, użytkowników i dane; działa niezależnie od Social Posts Managera.
 
+
+## Wdrożone poprawki
+
+[Podsumowanie poprawek od 29 października do 1 listopada 2026]({{ '/article-creator/poprawki-2026-10-29-2026-11-01/' | relative_url }}){: .btn .btn-primary }
+
+Zmiany dostępne na produkcji w wersji v43: prostsze przygotowanie marki, formularz artykułu, edytor, akceptacje, praca AI i SEO. Podsumowanie łączy poprawki według widoków i zawiera linki do ekranów aplikacji.
+
+
 ## Plan realizacji
 
 MVP obejmuje jedno wdrożenie: setup nowego repozytorium i środowiska, input, tworzenie i sprawdzanie treści, akceptacje, eksport Markdown/HTML/PDF oraz opcjonalną integrację wyłącznie ze sklepem Magmari. Integracje API innych systemów są późniejszym, osobno wycenianym rozszerzeniem. Formularz, Excel, serie i języki są elementami tego samego zakresu. Planowany hosting to Fly.io, po potwierdzeniu dostępu i zasobów. Szczegółowy plan i PDF opisują agentów, źródła, poprawki oraz kryteria odbioru.

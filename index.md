@@ -13,6 +13,8 @@ Plany i propozycje rozwoju projektów, zebrane w jednym miejscu do wspólnego cz
 
 Osobna aplikacja do artykułów: agenci AI, formularz i Excel, źródła, akceptacje, języki i publikacja. Działa niezależnie od Social Posts Managera.
 
+[Zobacz wdrożone poprawki 29 października do 1 listopada]({{ '/article-creator/poprawki-2026-10-29-2026-11-01/' | relative_url }}){: .btn .btn-primary }
+
 [Poznaj projekt]({{ '/article-creator/' | relative_url }}){: .btn }
 [Przeczytaj plan kreatora artykułów]({{ '/article-creator/plan/' | relative_url }}){: .btn .btn-primary }
 
