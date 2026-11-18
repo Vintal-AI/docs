@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Makieta kreatora treści stron · Article Creator</title>
+  <style>
+    body { margin: 0; background: #f4f2fb; color: #191329; }
+    .demo-navigation { padding: 9px clamp(14px, 2vw, 28px); font: 600 13px/1.5 Inter, system-ui, sans-serif; }
+    .demo-navigation a { color: #4b1fd4; display: inline-flex; align-items: center; min-height: 29px; text-underline-offset: 3px; }
+    #ac-site-content .ac-app { border-inline: 0; border-radius: 0; }
+    noscript { display: block; padding: 14px; }
+  </style>
+</head>
+<body>
+  <nav class="demo-navigation" aria-label="Dokumentacja"><a href="../">← Wróć do opisu propozycji</a></nav>
+  <noscript>Aby użyć klikalnej makiety, włącz JavaScript w przeglądarce.</noscript>
+<div id="ac-site-content">
+  <div class="ac-app">
+    <div class="ac-shell">
+      <aside class="ac-sidebar">
+        <div class="ac-brand"><span class="ac-mark"><svg data-lucide="pencil" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path><path d="m15 5 4 4"></path></svg></span><strong>Article Creator</strong></div>
+        <div class="ac-brand-context"><span class="ac-brand-initial" aria-hidden="true">J</span>Pracownia Jodła</div>
+        <div class="ac-sidebar-group"><div class="ac-nav-title">Treści</div><div class="ac-current" aria-current="page"><svg data-lucide="panels-top-left" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg> Treści stron</div></div>
+        <div class="ac-sidebar-group ac-knowledge">
+          <h2 class="ac-nav-title">Wiedza marki</h2>
+          <ul><li>Oferta mebli na wymiar</li><li>Proces realizacji</li><li>Styl komunikacji</li></ul>
+        </div>
+      </aside>
+      <main class="ac-main">
+        <div class="ac-top">
+          <div class="ac-breadcrumb" aria-label="Bieżący widok"><span>Pracownia Jodła</span><span aria-hidden="true">›</span> <strong>Treści stron</strong></div>
+          <span class="ac-demo">Makieta · przykładowe treści</span>
+        </div>
+        <div class="ac-workspace">
+          <nav class="ac-pages-nav" aria-label="Podstrony witryny">
+            <div id="ac-pages" class="ac-page-list"></div>
+            <button class="ac-btn ac-add-page" type="button" id="ac-new-page"><svg data-lucide="plus" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg> Dodaj podstronę</button>
+          </nav>
+        <header class="ac-heading">
+          <div><h1 id="ac-page-title"></h1><div class="ac-dim" id="ac-page-brief"></div></div>
+          <div class="ac-heading-actions">
+            <span class="ac-status" id="ac-status" aria-live="polite"></span>
+            <button class="ac-btn" type="button" id="ac-draft">Wstaw szkic strony</button>
+          </div>
+        </header>
+        <div class="ac-layout">
+          <section class="ac-work" aria-label="Edycja treści podstrony">
+            <div class="ac-panel-heading"><h2>Sekcje</h2><button type="button" class="ac-btn ac-add-page" id="ac-new-section"><svg data-lucide="plus" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg> Dodaj sekcję</button></div>
+            <div class="ac-section-list" id="ac-sections" aria-label="Sekcje podstrony"></div>
+            <form class="ac-form" id="ac-edit">
+              <div class="ac-edit-heading"><h3 id="ac-section-title"></h3><div class="ac-order"><button id="ac-up" class="ac-btn ac-quiet" aria-label="Przenieś sekcję w górę" type="button">↑</button><button id="ac-down" class="ac-btn ac-quiet" aria-label="Przenieś sekcję w dół" type="button">↓</button></div></div>
+              <label>Nagłówek<input id="ac-headline" maxlength="130" required></label>
+              <label>Treść<textarea id="ac-body" rows="4" maxlength="650"></textarea></label>
+              <label>Tekst przycisku<input id="ac-cta" maxlength="45"></label>
+              <div class="ac-form-actions">
+                <button class="ac-btn ac-primary" type="button" id="ac-save">Zapisz sekcję</button>
+                <button class="ac-btn ac-quiet" id="ac-generate" type="button">Wstaw przykład</button>
+              </div>
+            </form>
+          </section>
+          <section class="ac-preview" aria-label="Podgląd do akceptacji">
+            <div class="ac-panel-heading"><h2>Podgląd strony</h2><div class="ac-preview-actions"><button type="button" class="ac-btn" id="ac-html" aria-pressed="false" aria-controls="ac-code-label"><span id="ac-html-text">Pokaż HTML</span></button><a class="ac-btn" id="ac-open" target="_blank" rel="noopener" hidden><svg data-lucide="external-link" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg> Otwórz w nowej karcie</a></div></div>
+            <div class="ac-window">
+              <div class="ac-address"><span aria-hidden="true">● ● ●</span><span id="ac-path"></span></div>
+              <div class="ac-web" id="ac-web">
+                <div class="ac-web-nav">Pracownia Jodła</div>
+                <div class="ac-website-content" id="ac-rendered"></div>
+              </div>
+              <label id="ac-code-label" class="ac-code" hidden>Kod HTML zapisanej strony<textarea id="ac-code" readonly rows="15" spellcheck="false"></textarea></label>
+            </div>
+            <div class="ac-review">
+              <div id="ac-notice" class="ac-dim" aria-live="polite"></div>
+              <div class="ac-form-actions">
+                <button type="button" class="ac-btn ac-primary" id="ac-review">Wyślij do akceptacji</button>
+                <button type="button" class="ac-btn" id="ac-return" hidden>Zwróć do poprawy</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <dialog id="ac-dialog" aria-labelledby="ac-dialog-title">
+    <form class="ac-form" id="ac-create">
+      <h2 id="ac-dialog-title"></h2>
+      <label id="ac-name-label">Nazwa podstrony<input id="ac-name" maxlength="55"></label>
+      <label id="ac-goal-label">Cel podstrony<input id="ac-goal" maxlength="120" placeholder="np. Zapytanie o wycenę"></label>
+      <label id="ac-type-label"><span id="ac-type-caption">Typ</span><select id="ac-type"></select></label>
+      <div class="ac-form-actions">
+        <button class="ac-btn" type="button" id="ac-cancel">Anuluj</button>
+        <button class="ac-btn ac-primary" type="button" id="ac-create-submit">Dodaj</button>
+      </div>
+    </form>
+  </dialog>
+</div>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+  #ac-site-content {
+    color-scheme: light;
+    --ac-ink: light-dark(#191329, #f3edf9);
+    --ac-muted: light-dark(#706881, #bdafce);
+    --ac-line: light-dark(#ded9ee, #493c59);
+    --ac-paper: light-dark(#ffffff, #231b30);
+    --ac-canvas: light-dark(#f4f2fb, #1a1424);
+    --ac-tint: light-dark(#ede5fb, #3f2b5a);
+    --ac-purple: light-dark(#6c3bff, #aa8cff);
+    --ac-purple-hover: #4b1fd4;
+    --ac-on-purple: light-dark(#ffffff, #21122f);
+    --ac-highlight: #c8ff4d;
+    --ac-highlight-ink: #182207;
+    --ac-sidebar: #171126;
+    --ac-sidebar-foreground: #eeeaf7;
+    --ac-sidebar-muted: #bdb5d3;
+    --ac-sidebar-border: rgb(255 255 255 / .1);
+    --ac-sidebar-surface: rgb(255 255 255 / .07);
+    --ac-success: #0f7a55;
+    --ac-success-surface: #ecfdf5;
+    --ac-success-ink: #065f46;
+    --ac-success-border: #a7f3d0;
+    color: var(--ac-ink);
+    font: 14px/1.45 Inter, system-ui, sans-serif;
+  }
+  #ac-site-content *, #ac-site-content *::before, #ac-site-content *::after { box-sizing: border-box; }
+  #ac-site-content [hidden] { display: none !important; }
+  #ac-site-content h1, #ac-site-content h2, #ac-site-content h3, #ac-site-content p { margin: 0; }
+  #ac-site-content #ac-page-title { color: inherit; font-size: clamp(22px, 3.2vw, 30px); letter-spacing: -.045em; line-height: 1.17; }
+  #ac-site-content h2 { color: inherit; font-size: 15px; font-weight: 700; }
+  #ac-site-content h3 { color: inherit; font-size: 14px; font-weight: 650; }
+  #ac-site-content .ac-app { overflow: hidden; background: var(--ac-canvas); border: 1px solid var(--ac-line); border-radius: 18px; }
+  #ac-site-content .ac-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: space-between; border-bottom: 1px solid var(--ac-line); padding: 14px clamp(15px, 2.5vw, 30px); background: var(--ac-paper); min-height: 58px; }
+  #ac-site-content .ac-brand { display: flex; align-items: center; gap: 10px; color: var(--ac-sidebar-foreground); margin-bottom: 17px; overflow-wrap: anywhere; }
+  #ac-site-content .ac-mark { display: grid; flex: 0 0 36px; place-items: center; height: 36px; border-radius: 12px; background: var(--ac-purple); color: var(--ac-on-purple); }
+  #ac-site-content svg[data-lucide] { flex: none; width: 16px; height: 16px; }
+  #ac-site-content .ac-mark svg[data-lucide] { width: 20px; height: 20px; }
+  #ac-site-content .ac-brand-context, #ac-site-content .ac-current { display: flex; align-items: center; gap: 8px; padding: 8px 9px; border-radius: 12px; font-size: 13px; font-weight: 600; }
+  #ac-site-content .ac-brand-context { border: 1px solid var(--ac-sidebar-border); background: var(--ac-sidebar-surface); color: var(--ac-sidebar-foreground); }
+  #ac-site-content .ac-brand-initial { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 8px; background: var(--ac-sidebar-surface); }
+  #ac-site-content .ac-current { color: var(--ac-highlight-ink); background: var(--ac-highlight); }
+  #ac-site-content .ac-demo, #ac-site-content .ac-dim { font-size: 13px; color: var(--ac-muted); }
+  #ac-site-content .ac-shell { display: grid; grid-template-columns: minmax(172px, 19%) minmax(0, 1fr); }
+  #ac-site-content .ac-sidebar { padding: 16px 13px; background: radial-gradient(circle at -12% 10%, rgb(108 59 255 / .42), transparent 12rem), radial-gradient(circle at 115% 72%, rgb(72 223 247 / .11), transparent 13rem), var(--ac-sidebar); }
+  #ac-site-content .ac-sidebar-group { margin-top: 22px; }
+  #ac-site-content .ac-sidebar .ac-nav-title { color: var(--ac-sidebar-muted); font-weight: 650; font-size: 11px; letter-spacing: .07em; text-transform: uppercase; margin: 0 7px 7px; }
+  #ac-site-content .ac-pages-nav, #ac-site-content .ac-page-list { display: flex; gap: 5px; flex-wrap: wrap; }
+  #ac-site-content .ac-pages-nav { margin-bottom: 21px; align-items: center; justify-content: space-between; gap: 8px; }
+  #ac-site-content .ac-main { min-width: 0; }
+  #ac-site-content .ac-workspace { max-width: 1360px; margin-inline: auto; padding: clamp(15px, 2.5vw, 30px); }
+  #ac-site-content .ac-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; overflow-wrap: anywhere; }
+  #ac-site-content .ac-heading-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  #ac-site-content .ac-breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; color: var(--ac-muted); }
+  #ac-site-content .ac-breadcrumb span:first-child { color: var(--ac-purple-hover); }
+  #ac-site-content .ac-breadcrumb strong { color: var(--ac-ink); font-size: 13px; }
+  #ac-site-content #ac-page-brief { margin-top: 5px; }
+  #ac-site-content .ac-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: 14px; }
+  #ac-site-content .ac-work, #ac-site-content .ac-preview { border: 1px solid var(--ac-line); border-radius: 16px; background: var(--ac-paper); min-width: 0; padding: 14px; box-shadow: 0 16px 44px rgb(36 16 95 / .07); }
+  #ac-site-content .ac-panel-heading, #ac-site-content .ac-edit-heading { display: flex; align-items: center; justify-content: space-between; gap: 7px; flex-wrap: wrap; }
+  #ac-site-content .ac-preview-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+  #ac-site-content .ac-section-list { display: flex; flex-wrap: wrap; gap: 5px; margin-block: 9px 13px; }
+  #ac-site-content .ac-form, #ac-site-content .ac-form label { display: grid; gap: 5px; min-width: 0; }
+  #ac-site-content .ac-form { gap: 11px; }
+  #ac-site-content .ac-form label, #ac-site-content .ac-code { font-size: 12px; font-weight: 600; }
+  #ac-site-content input, #ac-site-content textarea, #ac-site-content select { display: block; min-width: 0; width: 100%; min-height: 44px; padding: 8px 11px; border: 1px solid var(--ac-line); border-radius: 12px; background: var(--ac-paper); color: var(--ac-ink); font: inherit; font-size: 14px; font-weight: 400; }
+  #ac-site-content textarea { resize: vertical; }
+  #ac-site-content .ac-btn { display: inline-flex; align-items: center; gap: 7px; font: inherit; font-size: 12px; font-weight: 600; background: var(--ac-paper); color: var(--ac-ink); border: 1px solid var(--ac-line); border-radius: 10px; padding: 7px 10px; min-height: 36px; cursor: pointer; overflow-wrap: anywhere; text-decoration: none; }
+  #ac-site-content .ac-btn:disabled { opacity: .5; cursor: default; }
+  #ac-site-content .ac-btn:is(:enabled, a):hover { background: var(--ac-tint); }
+  #ac-site-content .ac-primary { background: var(--ac-purple); color: var(--ac-on-purple); border-color: transparent; }
+  #ac-site-content .ac-primary:hover:enabled { background: var(--ac-purple-hover); }
+  #ac-site-content .ac-add-page { min-height: 44px; background: var(--ac-purple); color: var(--ac-on-purple); border-color: transparent; }
+  #ac-site-content .ac-add-page:hover:enabled { background: var(--ac-purple-hover); }
+  #ac-site-content .ac-quiet { background: transparent; border-color: transparent; color: var(--ac-purple); }
+  #ac-site-content .ac-page { text-align: left; border-color: transparent; }
+  #ac-site-content .ac-btn[aria-pressed="true"] { background: var(--ac-tint); color: var(--ac-ink); }
+  #ac-site-content .ac-page[aria-pressed="true"] { background: var(--ac-highlight); color: var(--ac-highlight-ink); }
+  #ac-site-content :is(button, a, input, select, textarea):focus-visible { outline: 2px solid var(--ac-purple); outline-offset: 2px; }
+  #ac-site-content .ac-order, #ac-site-content .ac-form-actions { display: flex; flex-wrap: wrap; gap: 5px; }
+  #ac-site-content .ac-status { flex-shrink: 0; padding: 3px 9px; border: 1px solid var(--ac-line); border-radius: 99px; background: var(--ac-paper); font-size: 12px; }
+  #ac-site-content .ac-status[data-state="review"] { background: var(--ac-tint); color: var(--ac-purple-hover); border-color: #c2afff; }
+  #ac-site-content .ac-status[data-state="approved"] { background: var(--ac-success-surface); color: var(--ac-success-ink); border-color: var(--ac-success-border); }
+  #ac-site-content #ac-review[data-state="review"] { background: var(--ac-success); color: white; }
+  #ac-site-content #ac-review[data-state="review"]:hover:enabled { background: var(--ac-success-ink); }
+  #ac-site-content .ac-knowledge { border-top: 1px solid var(--ac-sidebar-border); padding: 13px 0 0; }
+  #ac-site-content .ac-knowledge ul { padding-left: 23px; margin: 6px 0 0; font-size: 12px; color: var(--ac-sidebar-muted); }
+  #ac-site-content .ac-knowledge li + li { margin-top: 4px; }
+  #ac-site-content .ac-window { margin-top: 8px; border: 1px solid var(--ac-line); border-radius: 8px; overflow: hidden; }
+  #ac-site-content .ac-address { display: flex; gap: 10px; align-items: start; background: var(--ac-canvas); padding: 6px 9px; font-size: 11px; color: var(--ac-muted); overflow-wrap: anywhere; }
+  #ac-site-content .ac-address span:first-child { opacity: .55; white-space: nowrap; }
+  #ac-site-content .ac-empty { padding: 15px; }
+  #ac-site-content .ac-review { display: grid; gap: 8px; margin-top: 12px; }
+  #ac-site-content .ac-code { display: grid; padding: 8px; gap: 7px; }
+  #ac-site-content .ac-code textarea { font: 11px/1.45 ui-monospace, monospace; }
+  #ac-site-content dialog { width: min(430px, calc(100% - 26px)); padding: 22px; border: 1px solid var(--ac-line); border-radius: 24px; background: var(--ac-paper); color: var(--ac-ink); }
+  #ac-site-content dialog::backdrop { background: color-mix(in srgb, #181124 48%, transparent); }
+  @media (max-width: 760px) {
+    #ac-site-content .ac-shell { grid-template-columns: minmax(0, 1fr); }
+    #ac-site-content .ac-sidebar { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; padding: 9px 13px; }
+    #ac-site-content .ac-brand { margin: 0; }
+    #ac-site-content .ac-sidebar-group { display: none; }
+    #ac-site-content .ac-top { min-height: 0; }
+  }
+  @media (max-width: 620px) { #ac-site-content .ac-layout { grid-template-columns: minmax(0, 1fr); } }
+  @media (pointer: coarse) {
+    #ac-site-content .ac-btn { min-height: 44px; }
+    #ac-site-content :is(input, select, textarea) { font-size: 16px; }
+  }
+</style>
+<style id="ac-website-style">
+  .ac-web { background: #fcfaf3; color: #244330; overflow-wrap: anywhere; }
+  .ac-web .ac-web-nav { padding: 11px 16px; font: 700 16px Georgia, serif; border-bottom: 1px solid #d1dccb; }
+  .ac-web section { padding: 13px 16px; border-bottom: 1px solid #d1dccb; }
+  .ac-web section:last-child { border-bottom: 0; }
+  .ac-web .ac-hero { background: #e6efdd; padding-block: 23px; }
+  .ac-web section > :is(h1, h2) { color: inherit; margin: 0; font: 700 18px/1.12 Georgia, serif; }
+  #ac-site-content .ac-web section > h2 { font: 700 18px/1.12 Georgia, serif; }
+  .ac-web section > h1 { font-size: clamp(23px, 3.2vw, 35px); letter-spacing: -.025em; }
+  .ac-web section p { margin: 8px 0 0; font-size: 13px; white-space: pre-wrap; }
+  .ac-web .ac-web-cta { display: inline-block; margin-top: 11px; border: 1px solid currentColor; padding: 5px 9px; font-size: 12px; font-weight: 650; border-radius: 5px; }
+  .ac-web-standalone { font: 16px/1.55 system-ui, sans-serif; margin: 0; }
+  .ac-web-standalone .ac-web-nav, .ac-web-standalone .ac-website-content { max-width: 880px; margin-inline: auto; }
+  .ac-web-standalone section { padding: clamp(18px, 5vw, 48px); }
+  .ac-web-standalone .ac-hero { padding-block: clamp(28px, 7vw, 85px); }
+  .ac-web-standalone section > h1 { font-size: clamp(34px, 6vw, 65px); }
+  .ac-web-standalone section > h2 { font-size: clamp(24px, 4vw, 36px); }
+  .ac-web-standalone section p { font-size: 16px; max-width: 56ch; }
+</style>
+<script>
+(() => {
+  const root = document.getElementById("ac-site-content");
+  const byId = (id) => root.querySelector("#ac-" + id);
+  const types = { hero: "Hero", offer: "Oferta", process: "Jak pracujemy", faq: "FAQ", contact: "Kontakt" };
+  const pageTypes = { home: "Strona główna", offer: "Strona ofertowa", about: "O nas", contact: "Kontakt" };
+  const starters = { home: ["hero", "offer", "process"], offer: ["hero", "offer", "faq"], about: ["hero", "process"], contact: ["contact"] };
+  const templates = {
+    hero: ["Meble, które pasują do Twojego domu", "Projektujemy i wykonujemy meble na wymiar. Opowiedz nam, czego potrzebujesz, a pomożemy Ci ułożyć plan.", "Porozmawiajmy o projekcie"],
+    offer: ["Dopasowane do wnętrza", "Od szafy wnękowej po zabudowę kuchni. Ustalimy układ, materiały i podział wnętrza razem z Tobą.", ""],
+    process: ["Od rozmowy do montażu", "Zaczynamy od Twoich potrzeb i wymiarów. Potem omawiamy projekt, materiały i kolejne kroki.", ""],
+    faq: ["Co przygotować przed rozmową?", "Przydadzą się wymiary, zdjęcia wnętrza i przykłady rozwiązań, które Ci się podobają.", ""],
+    contact: ["Opowiedz nam o swoim projekcie", "Napisz, czego potrzebujesz i gdzie mają stanąć meble. Wrócimy z pytaniami do projektu.", "Wyślij zapytanie"]
+  };
+  const makeSection = (type, values = ["", "", ""]) => {
+    const [headline, body, cta] = values;
+    return { type, headline, body, cta };
+  };
+  const pages = [
+    { name: "Strona główna", path: "/", type: "home", goal: "Zachęcić do rozmowy o meblach na wymiar", revision: 1, state: "draft", sections: ["hero", "offer", "process"].map(type => makeSection(type, templates[type])) },
+    { name: "Kuchnie na wymiar", path: "/kuchnie-na-wymiar", type: "offer", goal: "Zachęcić do zapytania o projekt kuchni", revision: 1, state: "draft", sections: [makeSection("hero", ["Kuchnia urządzona pod Ciebie", "Zaprojektujemy kuchnię dopasowaną do codziennych nawyków i możliwości Twojego wnętrza.", "Zapytaj o kuchnię"]), makeSection("process")] }
+  ];
+  let activePage = 0;
+  let activeSection = 0;
+  let editing = {};
+  let htmlOpen = false;
+  let previewUrl;
+  let dialogKind = "page";
+  let returnFocus;
+  const page = () => pages[activePage];
+  const section = () => page().sections[activeSection];
+  const fields = ["headline", "body", "cta"];
+  const dirty = () => fields.some(key => byId(key).value !== editing[key]);
+  const status = { draft: "Szkic", review: "Do akceptacji", approved: "Zatwierdzona", returned: "Do poprawy" };
+  const say = (message) => { byId("notice").textContent = message; };
+  const canLeaveEdit = () => {
+    if (!dirty()) return true;
+    say("Zapisz sekcję przed przejściem dalej.");
+    byId("headline").focus();
+    return false;
+  };
+  const element = (tag, text, className) => {
+    const node = document.createElement(tag);
+    node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+  const choice = (label, selected, classes, action) => {
+    const button = element("button", label, classes);
+    button.type = "button";
+    button.setAttribute("aria-pressed", String(selected));
+    button.addEventListener("click", action);
+    return button;
+  };
+  const changeRevision = () => { page().state = "draft"; page().revision++; };
+
+  function buildContent() {
+    const sections = page().sections.filter(item => item.headline || item.body || item.cta);
+    return sections.map((item, index) => {
+      const block = element("section", "", item.type === "hero" ? "ac-hero" : "");
+      const tag = index === 0 ? "h1" : "h2";
+      if (item.headline) block.append(element(tag, item.headline));
+      if (item.body) block.append(element("p", item.body));
+      if (item.cta) block.append(element("span", item.cta, "ac-web-cta"));
+      return block;
+    });
+  }
+
+  function renderPreview() {
+    const content = buildContent();
+    byId("rendered").replaceChildren(...content);
+    if (!content.length) byId("rendered").append(element("p", "Zapisz pierwszą sekcję, aby zobaczyć podgląd.", "ac-empty"));
+    const html = content.length ? renderDocument(content) : "";
+    byId("code").value = html;
+    byId("html").disabled = !html;
+    if (!html) htmlOpen = false;
+    byId("path").textContent = "jodla.example" + page().path;
+    byId("web").hidden = htmlOpen;
+    byId("code-label").hidden = !htmlOpen;
+    byId("html").setAttribute("aria-pressed", String(htmlOpen));
+    byId("html-text").textContent = htmlOpen ? "Pokaż stronę" : "Pokaż HTML";
+
+    const open = byId("open");
+    open.hidden = !html || window.top !== window;
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    previewUrl = open.hidden ? undefined : URL.createObjectURL(new Blob([html], { type: "text/html;charset=UTF-8" }));
+    if (previewUrl) open.href = previewUrl;
+    else open.removeAttribute("href");
+  }
+
+  function renderDocument(sections) {
+    const title = element("title", page().name + " · Pracownia Jodła");
+    const brand = element("header", "Pracownia Jodła", "ac-web-nav");
+    const style = document.getElementById("ac-website-style").textContent.trim();
+    const body = sections.map(node => "    " + node.outerHTML).join("\n");
+    return [
+      "<!doctype html>", '<html lang="pl">', "<head>", '  <meta charset="utf-8">',
+      '  <meta name="viewport" content="width=device-width, initial-scale=1">',
+      "  " + title.outerHTML, "  <style>", "  " + style, "  </style>", "</head>",
+      '<body class="ac-web ac-web-standalone">', "  " + brand.outerHTML,
+      '  <main class="ac-website-content">', body, "  </main>", "</body>", "</html>"
+    ].join("\n");
+  }
+
+  function renderReview() {
+    const { state, revision, sections } = page();
+    const badge = byId("status");
+    badge.textContent = status[state] + " · wersja " + revision;
+    badge.dataset.state = state;
+    const hasEmptySections = sections.some(item => !item.headline.trim());
+    byId("draft").disabled = dirty() || !hasEmptySections;
+    const review = byId("review");
+    review.dataset.state = state;
+    review.hidden = state === "approved";
+    review.textContent = state === "review" ? "Zatwierdź wersję" : "Wyślij do akceptacji";
+    review.disabled = dirty() || hasEmptySections;
+    byId("return").hidden = state !== "review";
+    byId("return").disabled = dirty();
+  }
+
+  function render() {
+    byId("pages").replaceChildren(...pages.map((item, index) => choice(item.name, index === activePage, "ac-btn ac-page", () => {
+      if (!canLeaveEdit()) return;
+      activePage = index;
+      activeSection = 0;
+      say("");
+      render();
+      byId("pages").children[index].focus();
+    })));
+    byId("sections").replaceChildren(...page().sections.map((item, index) => choice(types[item.type], index === activeSection, "ac-btn", () => {
+      if (!canLeaveEdit()) return;
+      activeSection = index;
+      say("");
+      render();
+      byId("sections").children[index].focus();
+    })));
+    byId("page-title").textContent = page().name;
+    byId("page-brief").textContent = pageTypes[page().type] + (page().goal ? " · " + page().goal : "");
+    byId("section-title").textContent = "Edytuj sekcję " + types[section().type];
+    editing = { ...section() };
+    fields.forEach(key => { byId(key).value = editing[key]; });
+    byId("up").disabled = activeSection === 0;
+    byId("down").disabled = activeSection === page().sections.length - 1;
+    renderPreview();
+    renderReview();
+  }
+
+  function move(direction) {
+    if (!canLeaveEdit()) return;
+    const destination = activeSection + direction;
+    const list = page().sections;
+    if (destination < 0 || destination >= list.length) return;
+    list.splice(destination, 0, list.splice(activeSection, 1)[0]);
+    activeSection = destination;
+    changeRevision();
+    render();
+    say("Zapisano kolejność sekcji.");
+  }
+
+  function openDialog(kind, trigger) {
+    if (!canLeaveEdit()) return;
+    dialogKind = kind;
+    returnFocus = trigger;
+    const isPage = kind === "page";
+    byId("dialog-title").textContent = isPage ? "Dodaj podstronę" : "Dodaj sekcję";
+    byId("name-label").hidden = byId("goal-label").hidden = !isPage;
+    byId("name").required = isPage;
+    byId("name").setCustomValidity("");
+    byId("name").value = "";
+    byId("goal").value = "";
+    byId("type-caption").textContent = isPage ? "Typ podstrony" : "Typ sekcji";
+    const options = Object.entries(isPage ? pageTypes : types);
+    byId("type").replaceChildren(...options.map(([value, label]) => new Option(label, value)));
+    byId("type").value = "offer";
+    byId("create-submit").textContent = isPage ? "Dodaj podstronę" : "Dodaj sekcję";
+    byId("dialog").showModal();
+    byId(isPage ? "name" : "type").focus();
+  }
+
+  byId("new-page").addEventListener("click", event => openDialog("page", event.currentTarget));
+  byId("new-section").addEventListener("click", event => openDialog("section", event.currentTarget));
+  byId("cancel").addEventListener("click", () => byId("dialog").close());
+  byId("dialog").addEventListener("close", () => returnFocus?.focus());
+  byId("name").addEventListener("input", event => event.target.setCustomValidity(""));
+  function createItem() {
+    const type = byId("type").value;
+    if (dialogKind === "page") {
+      const name = byId("name").value.trim();
+      if (!name) {
+        byId("name").setCustomValidity("Wpisz nazwę podstrony.");
+        byId("name").reportValidity();
+        return;
+      }
+      const slug = name.toLowerCase().replaceAll("ł", "l").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "podstrona";
+      let path = "/" + slug;
+      for (let suffix = 2; pages.some(item => item.path === path); suffix++) path = "/" + slug + "-" + suffix;
+      pages.push({ name, type, goal: byId("goal").value.trim(), path, revision: 1, state: "draft", sections: starters[type].map(key => makeSection(key)) });
+      activePage = pages.length - 1;
+      activeSection = 0;
+      say("Dodano podstronę. Uzupełnij sekcje lub wstaw szkic strony.");
+    } else {
+      page().sections.push(makeSection(type));
+      activeSection = page().sections.length - 1;
+      changeRevision();
+      say("Dodano sekcję. Uzupełnij treść lub wstaw przykład.");
+    }
+    htmlOpen = false;
+    byId("dialog").close();
+    render();
+  }
+  byId("edit").addEventListener("input", renderReview);
+  byId("draft").addEventListener("click", () => {
+    page().sections = page().sections.map(item => item.headline ? item : makeSection(item.type, templates[item.type]));
+    changeRevision();
+    render();
+    say("Uzupełniono puste sekcje przykładową treścią.");
+  });
+  function saveSection() {
+    if (!byId("headline").value.trim()) {
+      say("Wpisz nagłówek sekcji.");
+      byId("headline").focus();
+      return;
+    }
+    if (dirty()) {
+      fields.forEach(key => { section()[key] = byId(key).value.trim(); });
+      changeRevision();
+    }
+    render();
+    say("Zapisano sekcję w wersji " + page().revision + ".");
+  }
+  byId("create-submit").addEventListener("click", createItem);
+  byId("save").addEventListener("click", saveSection);
+  [["create", createItem], ["edit", saveSection]].forEach(([form, save]) => {
+    byId(form).addEventListener("keydown", event => {
+      if (event.key !== "Enter" || event.isComposing || event.target.tagName !== "INPUT") return;
+      event.preventDefault();
+      save();
+    });
+  });
+  byId("generate").addEventListener("click", () => {
+    const values = templates[section().type];
+    fields.forEach((key, index) => { byId(key).value = values[index]; });
+    renderReview();
+    say("Wstawiono przykładowe teksty do edycji. Zapisz sekcję, aby odświeżyć podgląd.");
+  });
+  byId("up").addEventListener("click", () => move(-1));
+  byId("down").addEventListener("click", () => move(1));
+  byId("html").addEventListener("click", () => { htmlOpen = !htmlOpen; renderPreview(); });
+  byId("review").addEventListener("click", () => {
+    const approved = page().state === "review";
+    page().state = approved ? "approved" : "review";
+    say(approved ? "Zatwierdzono treść tej wersji w makiecie." : "Wysłano wersję do akceptacji. W makiecie możesz wykonać też decyzję recenzenta.");
+    renderReview();
+  });
+  byId("return").addEventListener("click", () => {
+    page().state = "returned";
+    say("Zwrócono wersję do poprawy.");
+    renderReview();
+  });
+  render();
+})();
+</script>
+<!-- Lucide icons
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+—-
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+</body>
+</html>

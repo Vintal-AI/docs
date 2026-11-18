@@ -30,6 +30,8 @@ MVP obejmuje jedno wdrożenie: setup nowego repozytorium i środowiska, input, t
 
 ## Propozycje rozwoju
 
+[Kreator treści stron internetowych]({{ '/article-creator/kreator-tresci-stron/' | relative_url }}) pokazuje proponowany proces przygotowania treści podstron z wiedzy marki, z klikalną makietą i podglądem HTML.
+
 Osobno można rozważyć agenta decyzyjnego korekty językowej, kolejne integracje API oraz planery serii i kampanii postów. Są to rozszerzenia poza obecną ofertą.
 
 [Zobacz propozycje rozwoju]({{ '/article-creator/plan/#propozycje-rozwoju' | relative_url }})
