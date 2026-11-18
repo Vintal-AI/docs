@@ -31,7 +31,7 @@
       <main class="ac-main">
         <div class="ac-top">
           <div class="ac-breadcrumb" aria-label="Bieżący widok"><span>Pracownia Jodła</span><span aria-hidden="true">›</span> <strong>Treści stron</strong></div>
-          <span class="ac-demo">Makieta · przykładowe treści</span>
+          <span class="ac-demo">Makieta · symulacja generowania AI</span>
         </div>
         <div class="ac-workspace">
           <nav class="ac-pages-nav" aria-label="Podstrony witryny">
@@ -42,21 +42,39 @@
           <div><h1 id="ac-page-title"></h1><div class="ac-dim" id="ac-page-brief"></div></div>
           <div class="ac-heading-actions">
             <span class="ac-status" id="ac-status" aria-live="polite"></span>
-            <button class="ac-btn" type="button" id="ac-draft">Wstaw szkic strony</button>
           </div>
         </header>
+        <section class="ac-page-ai" aria-labelledby="ac-page-ai-title">
+          <div class="ac-panel-heading"><h2 id="ac-page-ai-title">Brief dla AI</h2><span class="ac-dim">AI korzysta z wiedzy marki</span></div>
+          <div class="ac-page-ai-fields">
+            <label>Co ma przedstawiać podstrona?<input id="ac-topic" maxlength="100" placeholder="np. Szafy na wymiar do małych mieszkań"></label>
+            <label>Cel podstrony<select id="ac-goal"><option value="consult">Umów rozmowę</option><option value="quote">Zbierz zapytanie o wycenę</option><option value="inform">Przedstaw ofertę</option></select></label>
+          </div>
+          <div class="ac-page-ai-fields">
+            <label>Frazy SEO (opcjonalnie)<input id="ac-keywords" maxlength="145" placeholder="np. szafy na wymiar, zabudowa wnęki"></label>
+            <div class="ac-draft-action"><button class="ac-btn ac-primary" type="button" id="ac-draft" aria-describedby="ac-draft-hint" disabled><svg data-lucide="sparkles" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> Generuj szkic podstrony</button><div class="ac-dim" id="ac-draft-hint">AI uzupełni puste sekcje.</div></div>
+          </div>
+          <div id="ac-page-message" class="ac-dim" aria-live="polite" hidden></div>
+        </section>
         <div class="ac-layout">
           <section class="ac-work" aria-label="Edycja treści podstrony">
             <div class="ac-panel-heading"><h2>Sekcje</h2><button type="button" class="ac-btn ac-add-page" id="ac-new-section"><svg data-lucide="plus" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg> Dodaj sekcję</button></div>
             <div class="ac-section-list" id="ac-sections" aria-label="Sekcje podstrony"></div>
             <form class="ac-form" id="ac-edit">
               <div class="ac-edit-heading"><h3 id="ac-section-title"></h3><div class="ac-order"><button id="ac-up" class="ac-btn ac-quiet" aria-label="Przenieś sekcję w górę" type="button">↑</button><button id="ac-down" class="ac-btn ac-quiet" aria-label="Przenieś sekcję w dół" type="button">↓</button></div></div>
+              <div class="ac-section-ai">
+                <p class="ac-dim" id="ac-section-hint"></p>
+                <label>Co chcesz podkreślić? (opcjonalnie)<input id="ac-focus" maxlength="95" aria-describedby="ac-section-hint"></label>
+                <label>Własny nagłówek (opcjonalnie)<input id="ac-seed" maxlength="130" placeholder="AI może zaproponować nagłówek"></label>
+                <button class="ac-btn ac-primary" id="ac-generate" type="button" disabled><svg data-lucide="sparkles" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> Generuj treść sekcji</button>
+                <div id="ac-section-message" class="ac-dim" aria-live="polite" hidden></div>
+              </div>
               <label>Nagłówek<input id="ac-headline" maxlength="130" required></label>
               <label>Treść<textarea id="ac-body" rows="4" maxlength="650"></textarea></label>
               <label>Tekst przycisku<input id="ac-cta" maxlength="45"></label>
               <div class="ac-form-actions">
                 <button class="ac-btn ac-primary" type="button" id="ac-save">Zapisz sekcję</button>
-                <button class="ac-btn ac-quiet" id="ac-generate" type="button">Wstaw przykład</button>
+                <button class="ac-btn ac-quiet" id="ac-discard" type="button" hidden>Odrzuć zmiany</button>
               </div>
             </form>
           </section>
@@ -87,7 +105,6 @@
     <form class="ac-form" id="ac-create">
       <h2 id="ac-dialog-title"></h2>
       <label id="ac-name-label">Nazwa podstrony<input id="ac-name" maxlength="55"></label>
-      <label id="ac-goal-label">Cel podstrony<input id="ac-goal" maxlength="120" placeholder="np. Zapytanie o wycenę"></label>
       <label id="ac-type-label"><span id="ac-type-caption">Typ</span><select id="ac-type"></select></label>
       <div class="ac-form-actions">
         <button class="ac-btn" type="button" id="ac-cancel">Anuluj</button>
@@ -97,7 +114,6 @@
   </dialog>
 </div>
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
   #ac-site-content {
     color-scheme: light;
     --ac-ink: light-dark(#191329, #f3edf9);
@@ -155,13 +171,18 @@
   #ac-site-content .ac-breadcrumb strong { color: var(--ac-ink); font-size: 13px; }
   #ac-site-content #ac-page-brief { margin-top: 5px; }
   #ac-site-content .ac-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: start; gap: 14px; }
-  #ac-site-content .ac-work, #ac-site-content .ac-preview { border: 1px solid var(--ac-line); border-radius: 16px; background: var(--ac-paper); min-width: 0; padding: 14px; box-shadow: 0 16px 44px rgb(36 16 95 / .07); }
+  #ac-site-content :is(.ac-work, .ac-preview, .ac-page-ai) { border: 1px solid var(--ac-line); border-radius: 16px; background: var(--ac-paper); min-width: 0; padding: 14px; box-shadow: 0 16px 44px rgb(36 16 95 / .07); }
+  #ac-site-content .ac-page-ai { display: grid; gap: 10px; margin-bottom: 14px; }
+  #ac-site-content .ac-page-ai-fields { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 10px; align-items: start; }
+  #ac-site-content .ac-draft-action { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+  #ac-site-content .ac-section-ai { display: grid; gap: 8px; justify-items: start; padding: 11px; border: 1px solid var(--ac-line); border-radius: 12px; background: #fbfaff; }
+  #ac-site-content .ac-section-ai label { width: 100%; }
   #ac-site-content .ac-panel-heading, #ac-site-content .ac-edit-heading { display: flex; align-items: center; justify-content: space-between; gap: 7px; flex-wrap: wrap; }
   #ac-site-content .ac-preview-actions { display: flex; flex-wrap: wrap; gap: 6px; }
   #ac-site-content .ac-section-list { display: flex; flex-wrap: wrap; gap: 5px; margin-block: 9px 13px; }
-  #ac-site-content .ac-form, #ac-site-content .ac-form label { display: grid; gap: 5px; min-width: 0; }
+  #ac-site-content .ac-form, #ac-site-content :is(.ac-form, .ac-page-ai) label { display: grid; gap: 5px; min-width: 0; }
   #ac-site-content .ac-form { gap: 11px; }
-  #ac-site-content .ac-form label, #ac-site-content .ac-code { font-size: 12px; font-weight: 600; }
+  #ac-site-content :is(.ac-form, .ac-page-ai) label, #ac-site-content .ac-code { font-size: 12px; font-weight: 600; }
   #ac-site-content input, #ac-site-content textarea, #ac-site-content select { display: block; min-width: 0; width: 100%; min-height: 44px; padding: 8px 11px; border: 1px solid var(--ac-line); border-radius: 12px; background: var(--ac-paper); color: var(--ac-ink); font: inherit; font-size: 14px; font-weight: 400; }
   #ac-site-content textarea { resize: vertical; }
   #ac-site-content .ac-btn { display: inline-flex; align-items: center; gap: 7px; font: inherit; font-size: 12px; font-weight: 600; background: var(--ac-paper); color: var(--ac-ink); border: 1px solid var(--ac-line); border-radius: 10px; padding: 7px 10px; min-height: 36px; cursor: pointer; overflow-wrap: anywhere; text-decoration: none; }
@@ -201,7 +222,7 @@
     #ac-site-content .ac-sidebar-group { display: none; }
     #ac-site-content .ac-top { min-height: 0; }
   }
-  @media (max-width: 620px) { #ac-site-content .ac-layout { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 620px) { #ac-site-content :is(.ac-layout, .ac-page-ai-fields) { grid-template-columns: minmax(0, 1fr); } }
   @media (pointer: coarse) {
     #ac-site-content .ac-btn { min-height: 44px; }
     #ac-site-content :is(input, select, textarea) { font-size: 16px; }
@@ -233,21 +254,71 @@
   const types = { hero: "Hero", offer: "Oferta", process: "Jak pracujemy", faq: "FAQ", contact: "Kontakt" };
   const pageTypes = { home: "Strona główna", offer: "Strona ofertowa", about: "O nas", contact: "Kontakt" };
   const starters = { home: ["hero", "offer", "process"], offer: ["hero", "offer", "faq"], about: ["hero", "process"], contact: ["contact"] };
-  const templates = {
-    hero: ["Meble, które pasują do Twojego domu", "Projektujemy i wykonujemy meble na wymiar. Opowiedz nam, czego potrzebujesz, a pomożemy Ci ułożyć plan.", "Porozmawiajmy o projekcie"],
-    offer: ["Dopasowane do wnętrza", "Od szafy wnękowej po zabudowę kuchni. Ustalimy układ, materiały i podział wnętrza razem z Tobą.", ""],
-    process: ["Od rozmowy do montażu", "Zaczynamy od Twoich potrzeb i wymiarów. Potem omawiamy projekt, materiały i kolejne kroki.", ""],
-    faq: ["Co przygotować przed rozmową?", "Przydadzą się wymiary, zdjęcia wnętrza i przykłady rozwiązań, które Ci się podobają.", ""],
-    contact: ["Opowiedz nam o swoim projekcie", "Napisz, czego potrzebujesz i gdzie mają stanąć meble. Wrócimy z pytaniami do projektu.", "Wyślij zapytanie"]
+  const focusHints = {
+    hero: "np. Więcej miejsca do przechowywania",
+    offer: "np. Zabudowa trudnej wnęki",
+    process: "np. Pomiary i montaż",
+    faq: "np. Co przygotować przed wyceną?",
+    contact: "np. Zdjęcia wnętrza i wymiary"
   };
-  const makeSection = (type, values = ["", "", ""]) => {
-    const [headline, body, cta] = values;
-    return { type, headline, body, cta };
+  const sectionHints = {
+    hero: "To pierwszy ekran strony. Powiedz, co oferujesz i co odbiorca może zrobić dalej.",
+    offer: "Pokaż, co klient może zamówić i co z tego zyska.",
+    process: "Wyjaśnij, jak zacząć i co dzieje się po pierwszym kontakcie.",
+    faq: "Pomyśl o pytaniu, które klient zadaje przed podjęciem decyzji.",
+    contact: "Podpowiedz, co warto przesłać w pierwszej wiadomości."
   };
+  const goals = {
+    consult: { cta: "Umów rozmowę o projekcie", invitation: "Porozmawiajmy o tym, czego potrzebujesz i od czego zacząć." },
+    quote: { cta: "Zapytaj o wycenę", invitation: "Opisz wnętrze i podaj przybliżone wymiary, żebyśmy mogli omówić wycenę." },
+    inform: { cta: "Zobacz, jak pracujemy", invitation: "Sprawdź, jak dopasowujemy projekt do wnętrza i codziennych potrzeb." }
+  };
+  const makeSection = (type) => ({ type, headline: "", body: "", cta: "", focus: "", seed: "" });
+  const makePage = (name, path, type, topic = name, keywords = "") => ({
+    name, path, type, topic, keywords, goal: "consult", revision: 1, state: "draft",
+    sections: starters[type].map(makeSection)
+  });
   const pages = [
-    { name: "Strona główna", path: "/", type: "home", goal: "Zachęcić do rozmowy o meblach na wymiar", revision: 1, state: "draft", sections: ["hero", "offer", "process"].map(type => makeSection(type, templates[type])) },
-    { name: "Kuchnie na wymiar", path: "/kuchnie-na-wymiar", type: "offer", goal: "Zachęcić do zapytania o projekt kuchni", revision: 1, state: "draft", sections: [makeSection("hero", ["Kuchnia urządzona pod Ciebie", "Zaprojektujemy kuchnię dopasowaną do codziennych nawyków i możliwości Twojego wnętrza.", "Zapytaj o kuchnię"]), makeSection("process")] }
+    makePage("Strona główna", "/", "home", "Meble na wymiar", "meble na wymiar"),
+    makePage("Kuchnie na wymiar", "/kuchnie-na-wymiar", "offer", "Kuchnie na wymiar", "projekt kuchni, kuchnie na wymiar")
   ];
+
+  function draftFor(currentPage, item) {
+    const topic = currentPage.topic.trim();
+    const focus = item.focus.trim();
+    const keywords = currentPage.keywords.split(/[,\n]/u).map(value => value.trim()).filter(Boolean);
+    const context = [topic, focus, ...keywords].join(" ").toLocaleLowerCase("pl");
+    const smallSpace = /wnęk|mał.{0,4} (miesz|wnętrz)|przechowyw/u.test(context);
+    const kitchen = /kuchn|blat/u.test(context);
+    const detail = smallSpace
+      ? "Zaplanujemy zabudowę tak, żeby wykorzystać wnęki i zapewnić miejsce na rzeczy, które chcesz mieć pod ręką."
+      : kitchen
+        ? "Ustalimy układ szafek, blatu i stref pracy z uwzględnieniem tego, jak gotujesz na co dzień."
+        : "Dopasujemy układ, materiały i sposób przechowywania do wymiarów oraz do tego, jak korzystasz z wnętrza.";
+    const offer = smallSpace
+      ? "Głębokość półek, miejsce na wieszaki i liczbę szuflad ustalimy na podstawie wymiarów oraz rzeczy, które chcesz przechować."
+      : kitchen
+        ? "Dobierzemy fronty i omówimy, gdzie zmieszczą się sprzęty, zapasy oraz naczynia używane codziennie."
+        : "Przygotowujemy zabudowy kuchenne, szafy wnękowe i meble do innych pomieszczeń. Przed wykonaniem omawiamy zakres i materiały.";
+    const { cta, invitation } = goals[currentPage.goal];
+    const title = (value) => value.charAt(0).toLocaleUpperCase("pl") + value.slice(1);
+    const lowerTopic = topic.toLocaleLowerCase("pl");
+    const relatedPhrase = keywords.find(value => {
+      const lowerPhrase = value.toLocaleLowerCase("pl");
+      return value.length <= 65 && !lowerPhrase.includes(lowerTopic) && !lowerTopic.includes(lowerPhrase);
+    });
+    const angle = focus && !/[.!?]$/u.test(focus) ? title(focus) + "." : title(focus);
+    const drafts = {
+      hero: [title(topic), [angle, detail, invitation].filter(Boolean).join(" "), cta],
+      offer: [title(focus || relatedPhrase || "Co możemy przygotować"), offer, ""],
+      process: [focus ? title(focus) : "Od pierwszej rozmowy do montażu", "Zaczynamy od potrzeb i wymiarów. Następnie omawiamy projekt i materiały, ustalamy zakres prac i planujemy montaż.", ""],
+      faq: [focus ? title(focus) : "Co przygotować przed rozmową?", "Przydadzą się zdjęcia i przybliżone wymiary wnętrza. Jeśli masz przykłady rozwiązań, które Ci się podobają, prześlij je razem z opisem potrzeb.", ""],
+      contact: [focus ? title(focus) : "Opowiedz nam o swoim projekcie", invitation, cta]
+    };
+    const [headline, body, action] = drafts[item.type];
+    return { headline: item.seed.trim() || headline, body, cta: action };
+  }
+
   let activePage = 0;
   let activeSection = 0;
   let editing = {};
@@ -261,6 +332,11 @@
   const dirty = () => fields.some(key => byId(key).value !== editing[key]);
   const status = { draft: "Szkic", review: "Do akceptacji", approved: "Zatwierdzona", returned: "Do poprawy" };
   const say = (message) => { byId("notice").textContent = message; };
+  const generationMessage = (id, message) => {
+    const container = byId(id);
+    container.hidden = !message;
+    container.textContent = message;
+  };
   const canLeaveEdit = () => {
     if (!dirty()) return true;
     say("Zapisz sekcję przed przejściem dalej.");
@@ -297,7 +373,7 @@
   function renderPreview() {
     const content = buildContent();
     byId("rendered").replaceChildren(...content);
-    if (!content.length) byId("rendered").append(element("p", "Zapisz pierwszą sekcję, aby zobaczyć podgląd.", "ac-empty"));
+    if (!content.length) byId("rendered").append(element("p", "Wygeneruj szkic, aby zobaczyć podgląd podstrony.", "ac-empty"));
     const html = content.length ? renderDocument(content) : "";
     byId("code").value = html;
     byId("html").disabled = !html;
@@ -336,7 +412,11 @@
     badge.textContent = status[state] + " · wersja " + revision;
     badge.dataset.state = state;
     const hasEmptySections = sections.some(item => !item.headline.trim());
-    byId("draft").disabled = dirty() || !hasEmptySections;
+    const hasTopic = Boolean(page().topic.trim());
+    byId("draft").disabled = dirty() || !hasEmptySections || !hasTopic;
+    byId("generate").disabled = dirty() || !hasTopic;
+    byId("discard").hidden = !dirty();
+    byId("draft-hint").textContent = !hasTopic ? "Podaj temat podstrony." : hasEmptySections ? "AI uzupełni puste sekcje." : "Szkic jest gotowy. Możesz dopracować pojedynczą sekcję.";
     const review = byId("review");
     review.dataset.state = state;
     review.hidden = state === "approved";
@@ -352,6 +432,7 @@
       activePage = index;
       activeSection = 0;
       say("");
+      generationMessage("page-message", "");
       render();
       byId("pages").children[index].focus();
     })));
@@ -363,8 +444,14 @@
       byId("sections").children[index].focus();
     })));
     byId("page-title").textContent = page().name;
-    byId("page-brief").textContent = pageTypes[page().type] + (page().goal ? " · " + page().goal : "");
-    byId("section-title").textContent = "Edytuj sekcję " + types[section().type];
+    byId("page-brief").textContent = pageTypes[page().type];
+    ["topic", "keywords", "goal"].forEach(key => { byId(key).value = page()[key]; });
+    byId("section-title").textContent = "Sekcja " + types[section().type];
+    byId("section-hint").textContent = sectionHints[section().type];
+    byId("focus").value = section().focus;
+    byId("focus").placeholder = focusHints[section().type];
+    byId("seed").value = section().seed;
+    generationMessage("section-message", "");
     editing = { ...section() };
     fields.forEach(key => { byId(key).value = editing[key]; });
     byId("up").disabled = activeSection === 0;
@@ -391,11 +478,10 @@
     returnFocus = trigger;
     const isPage = kind === "page";
     byId("dialog-title").textContent = isPage ? "Dodaj podstronę" : "Dodaj sekcję";
-    byId("name-label").hidden = byId("goal-label").hidden = !isPage;
+    byId("name-label").hidden = !isPage;
     byId("name").required = isPage;
     byId("name").setCustomValidity("");
     byId("name").value = "";
-    byId("goal").value = "";
     byId("type-caption").textContent = isPage ? "Typ podstrony" : "Typ sekcji";
     const options = Object.entries(isPage ? pageTypes : types);
     byId("type").replaceChildren(...options.map(([value, label]) => new Option(label, value)));
@@ -422,26 +508,42 @@
       const slug = name.toLowerCase().replaceAll("ł", "l").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "podstrona";
       let path = "/" + slug;
       for (let suffix = 2; pages.some(item => item.path === path); suffix++) path = "/" + slug + "-" + suffix;
-      pages.push({ name, type, goal: byId("goal").value.trim(), path, revision: 1, state: "draft", sections: starters[type].map(key => makeSection(key)) });
+      pages.push(makePage(name, path, type));
       activePage = pages.length - 1;
       activeSection = 0;
-      say("Dodano podstronę. Uzupełnij sekcje lub wstaw szkic strony.");
+      say("");
+      generationMessage("page-message", "Dodano podstronę. Uzupełnij brief i wygeneruj szkic.");
     } else {
       page().sections.push(makeSection(type));
       activeSection = page().sections.length - 1;
       changeRevision();
-      say("Dodano sekcję. Uzupełnij treść lub wstaw przykład.");
+      say("Dodano sekcję. Możesz wygenerować jej treść z AI.");
     }
     htmlOpen = false;
     byId("dialog").close();
     render();
   }
+  ["topic", "keywords", "goal"].forEach(key => {
+    byId(key).addEventListener("input", event => {
+      page()[key] = event.target.value;
+      generationMessage("page-message", "");
+      renderReview();
+    });
+  });
+  ["focus", "seed"].forEach(key => {
+    byId(key).addEventListener("input", event => {
+      section()[key] = event.target.value;
+      generationMessage("section-message", "");
+    });
+  });
   byId("edit").addEventListener("input", renderReview);
   byId("draft").addEventListener("click", () => {
-    page().sections = page().sections.map(item => item.headline ? item : makeSection(item.type, templates[item.type]));
+    page().sections.forEach(item => {
+      if (!item.headline) Object.assign(item, draftFor(page(), item));
+    });
     changeRevision();
     render();
-    say("Uzupełniono puste sekcje przykładową treścią.");
+    generationMessage("page-message", "Szkic zapisany. Sprawdź teksty w podglądzie i dopracuj wybrane sekcje.");
   });
   function saveSection() {
     if (!byId("headline").value.trim()) {
@@ -458,18 +560,22 @@
   }
   byId("create-submit").addEventListener("click", createItem);
   byId("save").addEventListener("click", saveSection);
+  byId("discard").addEventListener("click", () => {
+    render();
+    generationMessage("section-message", "Przywrócono zapisaną treść sekcji.");
+  });
   [["create", createItem], ["edit", saveSection]].forEach(([form, save]) => {
     byId(form).addEventListener("keydown", event => {
-      if (event.key !== "Enter" || event.isComposing || event.target.tagName !== "INPUT") return;
+      if (event.key !== "Enter" || event.isComposing || event.target.tagName !== "INPUT" || event.target.closest(".ac-section-ai")) return;
       event.preventDefault();
       save();
     });
   });
   byId("generate").addEventListener("click", () => {
-    const values = templates[section().type];
-    fields.forEach((key, index) => { byId(key).value = values[index]; });
+    const proposal = draftFor(page(), section());
+    fields.forEach(key => { byId(key).value = proposal[key]; });
     renderReview();
-    say("Wstawiono przykładowe teksty do edycji. Zapisz sekcję, aby odświeżyć podgląd.");
+    generationMessage("section-message", "Szkic jest gotowy. Przejrzyj treść poniżej i zapisz sekcję.");
   });
   byId("up").addEventListener("click", () => move(-1));
   byId("down").addEventListener("click", () => move(1));
@@ -488,6 +594,9 @@
   render();
 })();
 </script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+</style>
 <!-- Lucide icons
 ISC License
 
